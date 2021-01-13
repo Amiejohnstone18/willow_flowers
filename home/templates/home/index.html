@@ -3,7 +3,7 @@
 
 {% block extra_css %}
 <!-- Index CSS -->
-<link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
 {% endblock %}
 
 {% block content %}
@@ -34,23 +34,50 @@
     </a>
 </div>
 
-
+<!-- X3 Images and Links to relevant pages -->
 <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <img src="images/birthday.jpg" href="" class="img-circle" alt="birthday">
+    <div class="row">
+        <div class="col-sm">
+            <img src="images/birthday.jpg" href="" class="img-circle" alt="birthday">
+        </div>
+        <div class="col-sm">
+            <img src="images/bonsai.jpg" href="" class="img-circle" alt="plants">
+        </div>
+        <div class="col-sm">
+            <img src="images/wedding.jpg" href="" class="img-circle" alt="wedding">
+        </div>
     </div>
-    <div class="col-sm">
-      <img src="images/bonsai.jpg" href="" class="img-circle" alt="plants">
+</div>
+
+<!-- Customer Testimonials -->
+<h2 class="testimonials-header">Hear what our customers think</h2>
+
+<!-- Testimonial Carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner container">
+    <div class="carousel-item active">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
     </div>
-    <div class="col-sm">
-      <img src="images/wedding.jpg" href="" class="img-circle" alt="wedding">
+    <div class="carousel-item">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
+    </div>
+    <div class="carousel-item">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
+    </div>
+    <div class="carousel-item">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
 </div>
 
 
 
-
-
-{% endblock %}
+                    {% endblock %}
