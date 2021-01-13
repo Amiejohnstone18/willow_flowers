@@ -22,31 +22,6 @@
     font-size: 1.2em;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #ffc1cc;
-    font-family: 'Playfair Display', serif;
-    color: white;
-}
-
-.navbar-nav {
-    margin: 0 auto;
-}
-
-.nav-link {
-    color: white;
-    font-size: 18px;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    background-color: white;
-}
-
-/* Nav Hamburger */
-.navbar-toggler {
-    color: white;
-}
 
 /* Footer */
 footer {
