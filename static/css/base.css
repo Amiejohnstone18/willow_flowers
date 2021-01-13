@@ -1,5 +1,5 @@
-/* Navbar */
-.navbar {
+/* Logo */
+.top-nav {
     background-color: #ffc1cc;
     font-family: 'Playfair Display', serif;
     color: white;
@@ -11,20 +11,41 @@
 }
 
 .navbar-brand:hover {
-    color: white;
     font-size: 32px;
+    color: white;
+}
+
+/* Icons */
+.corner-icons {
+    float: right;
+    padding-top: 0.3em;
+    font-size: 1.2em;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffc1cc;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.navbar-nav {
+    margin: 0 auto;
 }
 
 .nav-link {
     color: white;
     font-size: 18px;
-    text-align: center;
 }
 
 .nav-link:hover {
-    color: white;
     text-decoration: underline;
-    text-align: center;
+    background-color: white;
+}
+
+/* Nav Hamburger */
+.navbar-toggler {
+    color: white;
 }
 
 /* Footer */
@@ -34,7 +55,6 @@ footer {
     margin-bottom: 0;
     height: 3em;
 }
-
 
 .social-icons{
     font-size: 1em;
