@@ -54,7 +54,7 @@
 
 
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">Willow Flowers</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -62,80 +62,81 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Middle Links -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Flowers
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">All Flowers</a></li>
-                            <li><a class="dropdown-item" href="#">Shop By Occasion</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Plants
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">All Plants</a></li>
-                            <li><a class="dropdown-item" href="#">Inside</a></li>
-                            <li><a class="dropdown-item" href="#">Outside</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <!-- Far left icons -->
-                <!-- Favourites -->
-                <i class="fas fa-heart" href=""></i>
-                <!-- Shopping basket -->
-                <li class="list-inline-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                        href="">
-                        <div class="text-center">
-                            <div><i class="fas fa-shopping-basket"></i></div>
-                            <p class="my-0">
-                                {% if grand_total %}
-                                £{{ grand_total|floatformat:2 }}
-                                {% else %}
-                                £0.00
-                                {% endif %}
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <!-- User Account -->
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        {% if request.user.is_authenticated %}
-                        {% if request.user.is_superuser %}
-                        <li><a class="dropdown-item" href="#">Admin</a></li>
-                        {% endif %}
-                        <li><a class="dropdown-item" href="#">My Account</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Log Out</a></li>
-                        {% else %}
-                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
-                        {% endif %}
+            <div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Flowers
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">All Flowers</a></li>
+                                <li><a class="dropdown-item" href="#">Shop By Occasion</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">All Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Inside</a></li>
+                                <li><a class="dropdown-item" href="#">Outside</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
                     </ul>
-                    <!-- Search -->
-                    <li>
-                        <a href="" class="fas fa-search"></a>
+                    <!-- Far left icons -->
+                    <!-- Favourites -->
+                    <i class="fas fa-heart" href=""></i>
+                    <!-- Shopping basket -->
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                            href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-basket"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    £{{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    £0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
                     </li>
+                    <!-- User Account -->
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <li><a class="dropdown-item" href="#">Admin</a></li>
+                            {% endif %}
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="{% url 'account_logout' %}">Log Out</a></li>
+                            {% else %}
+                            <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                            {% endif %}
+                        </ul>
+                        <!-- Search -->
+                        <li>
+                            <a href="" class="fas fa-search"></a>
+                        </li>
+                    </div>
                 </div>
             </div>
-        </div>
     </nav>
 
     {% if messages %}
@@ -150,6 +151,23 @@
 
     {% block postloadjs %}
     {% endblock %}
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="footer">
+                <div class="social-icons">
+                    <a href="https://twitter.com/login?lang=en-gb" target="blank"><i class="fab fa-twitter-square"
+                            id="twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="blank"><i
+                            class="fab fa-instagram-square" id="instagram"></i></a>
+                    <a href="https://www.pinterest.co.uk/" target="blank"><i class="fab fa-pinterest-square"
+                            id="pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 </body>

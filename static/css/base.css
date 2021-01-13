@@ -1,5 +1,57 @@
+/* Navbar */
 .navbar {
+    background-color: #ffc1cc;
     font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-brand:hover {
+    color: white;
+    font-size: 32px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #ffc1cc;
+    margin-top: 3em;
+    margin-bottom: 0;
+    height: 3em;
 }
 
 
+.social-icons{
+    font-size: 1em;
+    float: right;
+    padding: 0.5em;
+    padding-left: 2px;
+    padding-top: 1em;
+}
+
+#twitter{
+    color: white;
+}
+
+#instagram{
+    color: white;
+}
+
+#pinterest {
+    color: white;
+}
