@@ -3,6 +3,7 @@
     background-color: #ffc1cc;
     font-family: 'Playfair Display', serif;
     color: white;
+    height: 15em;
 }
 
 .navbar-brand {
@@ -22,9 +23,14 @@
     font-size: 1.2em;
 }
 
+
 /* Nav Links */
 .navbar-toggler {
-    color: white;
+    background-color: white;
+}
+
+span .navbar-toggler-icon {
+    color: #ffc1cc !important;
 }
 
 .navbar {
@@ -34,14 +40,18 @@
 .nav-link {
     font-family: 'Playfair Display', serif;
     color: white;
-    font-size: 18px;;
-    margin-left: 5em;
-    margin-right: 5em;
+    font-size: 20px;;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .nav-link:hover {
     color: white;
     text-decoration: underline;
+}
+
+.dropdown-item {
+    font-family: 'Playfair Display', serif;
 }
 
 /* Footer */

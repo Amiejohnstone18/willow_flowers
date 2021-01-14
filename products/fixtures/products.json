@@ -1,0 +1,82 @@
+[
+  {
+    "_id": 1,
+    "model": "products.product",
+    "fields": {
+        "name": "Red Rose Bouquet",
+        "category": 1,
+        "description": "This Red and White Rose bouquet is the perfect Brithday Gift. Bursting with scents and with a long life span, make someone feel special on their Brithday.",
+        "price": 24.99,
+        "image_url": "https://images.pexels.com/photos/931168/pexels-photo-931168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "image":"/images/00001.jpg"
+    }
+  },
+  {
+    "_id": 2,
+    "model":"products.product",
+    "fields": {
+        "name": "Pink Roses",
+        "category": 2,
+        "description": "A bubble of pink Roses is the perfect way to say congraulations.",
+        "price": 30.00,
+        "image_url": "https://cdn.pixabay.com/photo/2013/07/30/12/28/bouquet-168832_960_720.jpg",
+        "image":"00002.jpg"
+    }
+  },
+  {
+    "_id": 3,
+    "model": "products.product",
+    "fields": {
+        "name": "Bloom Bouquet",
+        "category": 3,
+        "description": "The perfect bouquet to say get well soon.",
+        "price": 20.99,
+        "image_url":"https://cdn.pixabay.com/photo/2016/11/19/10/43/bloom-1838553_960_720.jpg",
+        "image":"00003.jpg"
+    }
+  },
+  {"_id": 4,
+    "model": "products.product",
+    "fields": {
+        "name": "Babys' in Blue",
+        "category": 4,
+        "description": "The perfect gife for a new born boy.",
+        "price": 25.00,
+        "image_url":"https://images.pexels.com/photos/1388945/flowers-bouquet-blue-muscari-1388945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "image": "00004.jpg"
+    }
+  },
+  {"_id": 5,
+    "model": "products.product",
+    "fields": {
+        "name": "A Rose Wedding",
+        "category": 5,
+        "description": "Celebrate your special day with a pastel themed rose wedding bouquet.",
+        "price": 30.00,
+        "image_url":"https://images.pexels.com/photos/1424810/pexels-photo-1424810.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "image": "00005.jpg"
+    }
+  },
+  {"_id": 6,
+    "model": "products.product",
+    "fields": {
+        "name": "The Bonsai Extravaganza",
+        "category": 6,
+        "description": "Add a little life to your home with this Bonsai delight.",
+        "price": 30.00,
+        "image_url":"https://cdn.pixabay.com/photo/2014/04/05/11/39/bonsai-316573_960_720.jpg",
+        "image": "00006.jpg"
+    }
+  },
+   {"_id": 7,
+    "model": "products.product",
+    "fields": {
+        "name": "Blooming Delight",
+        "category": 7,
+        "description": "Our hanging plants will brighten any garden.",
+        "price": 25.00,
+        "image_url":"https://cdn.pixabay.com/photo/2018/04/06/10/45/plant-3295486_960_720.jpg",
+        "image": "00007.jpg"
+    }
+  }
+  ]
