@@ -22,6 +22,27 @@
     font-size: 1.2em;
 }
 
+/* Nav Links */
+.navbar-toggler {
+    color: white;
+}
+
+.navbar {
+    background-color: #ffc1cc;
+}
+
+.nav-link {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 18px;;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 /* Footer */
 footer {
