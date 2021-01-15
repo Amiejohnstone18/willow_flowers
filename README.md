@@ -2,7 +2,7 @@
 
 -> image of website on different devices 
 
-Willow Flowers is a user-friendly e-commerce website built via main technologies [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/CSS), [JavaScript](https://en.wikipedia.org/wiki/JavaScript), [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) and [Django](https://docs.djangoproject.com/en/3.1/). 
+Willow Flowers is a user-friendly e-commerce website built via main technologies [HTML](https://html.com/), [CSS](https://en.wikipedia.org/wiki/CSS), [JavaScript](https://www.javascript.com/about), [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/). 
 The purpose of this website is to enable users to purchase items such, such as plants and flowers, and create a user profile to store their previous orders and site favouties to access at any time. The site owner is able to upload, edit and delete products when necessary. 
 
 # Contents
@@ -16,23 +16,43 @@ The purpose of this website is to enable users to purchase items such, such as p
 
 
 
-## UX Design 
+# UX Design 
+
+
+## Strategy
+
+## Scope
+
+## Structure 
+
+## Skeleton
+
+## Surface
 
 
 
-## Project Development 
+# Project Development 
 
 
-## Features
+# Features
 
 
-## Technologies Used
+# Technologies Used
+* [HTML](https://html.com/)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://www.javascript.com/about)
+* [Python](https://www.python.org/) 
+* [Django](https://www.djangoproject.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
+* [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
+
+# Testing 
 
 
-## Testing 
+# Deployment 
 
 
-## Deployment 
-
-
-## Credits 
+# Credits 
