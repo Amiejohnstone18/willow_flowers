@@ -1,3 +1,4 @@
+/* Page Title */
 h1 {
     font-family:'Playfair Display', serif;
     text-align: center;
@@ -6,23 +7,28 @@ h1 {
     padding-bottom: 20px;
 }
 
+/* Bootstrap Cards */
 .card {
   overflow: hidden;
   padding: 10px, 20px, 20px, 20px;
   display: block;
   margin-bottom: 10px;
+  border: 0.5px solid #D3D3D3;
 }
 
+/* Product Name */
 .card-title {
     font-family:'Playfair Display', serif;
     color: black;
 }
 
+/* Price */
 .card-price {
     font-family:'Playfair Display', serif;
     color: black
 }
 
+/* Button linking to full description */
 .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;

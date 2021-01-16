@@ -1,0 +1,27 @@
+/* Product Name */
+.product-name {
+    font-family:'Playfair Display', serif;
+    text-align: center;
+    color: black;
+    font-size: 26px;
+}
+
+/* Description */
+.description .price {
+    font-family:'Playfair Display', serif;
+    color: black;
+    font-size: 18px;
+}
+
+/* Icons */
+
+.btn {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+}

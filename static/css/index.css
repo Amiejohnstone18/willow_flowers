@@ -1,9 +1,10 @@
 
 .img-circle {
     margin-top: 2em;
-     border-radius: 50%;
+    border-radius: 50%;
     width: 350px;
     height: 350px;
+    object-fit: contain;
 }
 
 .testimonials-header {

@@ -18,12 +18,12 @@
                         {% if product.image %}
                         <img src="{{ product.image.url }}" class="card-img-top img-fluid" alt="{{ product.name }}">
                         {% else %}
-                        <img src="{{ MEDIA_URL}}noimage.png" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        <img src="{{ MEDIA_URL}}noimage.png }}" class="card-img-top img-fluid" alt="{{ product.name }}">
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
                             <p class="card-price">{{ product.price }}</p>
-                            <a href="#" class="btn">View More</a>
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-sm">View More</a>
                         </div>
                     </div>
                 </div>

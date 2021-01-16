@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<!-- Index CSS -->
+<link rel="stylesheet" href="{% static 'css/product_detail.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+{% for product in products %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="image">
+                        {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img src="{{ product.image.url }}" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <img src="{{ MEDIA_URL}}noimage.png }}" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="details-container">
+                    <h2 class="product-name">{{ product.name }}</h2>
+                    <p class="description">{{ product.description }}</p>
+                    <p class="price">{{ product.price }}</p>
+                    <button type="button" class="btn btn-sm">Add to basket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+
+
+{% endblock %}
