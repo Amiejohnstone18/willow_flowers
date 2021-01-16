@@ -1,18 +1,22 @@
+/* X3 Cirlce images */
+img {
+    max-width: 100%;
+}
 
 .img-circle {
     margin-top: 2em;
     border-radius: 50%;
     width: 350px;
     height: 350px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
+/* Testimonials */
 .testimonials-header {
     text-align: center;
     font-family: 'Playfair Display', serif;
     margin-top: 2em;
 }
-
 
 .carousel-item {
     font-family: 'Playfair Display', serif;

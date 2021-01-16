@@ -37,14 +37,14 @@
 <!-- X3 Images and Links to relevant pages -->
 <div class="container">
     <div class="row">
-        <div class="col-sm">
-            <img src="media/birthday.jpg" href="" class="img-circle" alt="birthday">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <img src="media/birthday.jpg" href="{% url 'products' %}?category=birthday" class="img-circle" alt="birthday">
         </div>
         <div class="col-sm">
-            <img src="media/bonsai.jpg" href="" class="img-circle" alt="plants">
+            <img src="media/bonsai.jpg" href="{% url 'products' %}?category=inside_plants,outside_plants" class="img-circle" alt="plants">
         </div>
         <div class="col-sm">
-            <img src="media/wedding.jpg" href="" class="img-circle" alt="wedding">
+            <img src="media/wedding.jpg" href="{% url 'products' %}?category=wedding" class="img-circle" alt="wedding">
         </div>
     </div>
 </div>
