@@ -3,14 +3,32 @@
 
 {% block extra_css %}
 <!-- Index CSS -->
-<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+<link rel="stylesheet" href="{% static 'css/products.css' %}" />
 {% endblock %}
 
 {% block content %}
 <div class="container">
     <div class="row">
         <div class="col">
-            {{ products }}
+            <h1>All Flowers</h1>
+            <div class="row">
+                {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                        {% if product.image %}
+                        <img src="{{ product.image.url }}" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        {% else %}
+                        <img src="{{ MEDIA_URL}}noimage.png" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-price">{{ product.price }}</p>
+                            <a href="#" class="btn">View More</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
