@@ -20,6 +20,7 @@ def all_products(request):
 
     context = {
         'products': products, 
+        'current_categories': categories,
     }
 
     return render(request, 'products/products.html', context)
@@ -28,12 +29,11 @@ def all_products(request):
 def product_detail(request, product_id):
     """ A view to return the individual product details  """
 
-    product = get_object_or_404(Product, id=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
-        'product': product, 
-        'current_categories': categories,
-    }
+        'product': product,
+        }
 
     return render(request, 'products/product_detail.html', context)
 

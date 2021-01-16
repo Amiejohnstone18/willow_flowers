@@ -1,6 +1,6 @@
 [
   {
-    "_id": 1,
+    "pk": 1,
     "model": "products.product",
     "fields": {
         "name": "Red Rose Bouquet",
@@ -12,7 +12,7 @@
     }
   },
   {
-    "_id": 2,
+    "pk": 2,
     "model":"products.product",
     "fields": {
         "name": "Pink Roses",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "_id": 3,
+    "pk": 3,
     "model": "products.product",
     "fields": {
         "name": "Bloom Bouquet",
@@ -35,7 +35,7 @@
         "image":"00003.jpg"
     }
   },
-  {"_id": 4,
+  {"pk": 4,
     "model": "products.product",
     "fields": {
         "name": "Babys' in Blue",
@@ -46,7 +46,7 @@
         "image": "00004.jpg"
     }
   },
-  {"_id": 5,
+  {"pk": 5,
     "model": "products.product",
     "fields": {
         "name": "A Rose Wedding",
@@ -57,7 +57,7 @@
         "image": "00005.jpg"
     }
   },
-  {"_id": 6,
+  {"pk": 6,
     "model": "products.product",
     "fields": {
         "name": "The Bonsai Extravaganza",
@@ -68,7 +68,7 @@
         "image": "00006.jpg"
     }
   },
-   {"_id": 7,
+   {"pk": 7,
     "model": "products.product",
     "fields": {
         "name": "Blooming Delight",

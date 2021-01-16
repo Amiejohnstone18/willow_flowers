@@ -16,6 +16,11 @@ h1 {
   border: 0.5px solid #D3D3D3;
 }
 
+img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
 /* Product Name */
 .card-title {
     font-family:'Playfair Display', serif;
