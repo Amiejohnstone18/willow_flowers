@@ -1,20 +1,21 @@
 # Willow Flowers 
 
--> image of website on different devices 
+--> image of website on different devices 
 
 Willow Flowers is a user-friendly e-commerce website built via main technologies [HTML](https://html.com/), [CSS](https://en.wikipedia.org/wiki/CSS), [JavaScript](https://www.javascript.com/about), [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/). 
-The purpose of this website is to enable consumers to purchase items such, such as plants and flowers, and create a user profile to store their previous orders and site favourites to access at any time. The site owner can upload, edit and delete products when necessary. 
+The purpose of this website is to enable consumers to purchase items, such as plants and flowers, and create a user profile to store their previous orders and site favourites to access at any time. The website owner can upload, edit and delete products when necessary. 
 
 # Contents
 * [UX Design](#UX-Design)
-    * [stratgey](##strategy)
+    * [Strategy](##strategy)
     * [Scope](##Scope)
     * [Structure](##Structure)
     * [Skeleton](##Skeleton)
     * [Surface](##Surface)
     * [Wireframes](##Wireframes)
-* [Project Development](#Project-Development)
 * [Features](#Features)
+    * [Existing Features](##Existing-features)
+    * [Features Left to Implement](##Features-Left-to-Implement)
 * [Technologies Used](#Technologies-Used)
 * [Testing](#Tesing)
 * [Deployment](#Deployment)
@@ -37,6 +38,9 @@ Following the five planes of user experience design, the strategy has been separ
 
 <span style="color:red">**Why-**</span> Consumers will want to use this website to purchase florist products due to its easy navigation and information architecture layout, and simple payment process.
 
+Following these, I also conducted some user stories to ensure the website is serving its purpose. 
+
+
 ## Scope
 The features included in this website will consist of:
 * The option to narrow down a product search through filtering the occasion. 
@@ -56,7 +60,7 @@ The navigation menu will be divided like so:
 ![Nav-links-menu](README-images/Nav-links-menu.png)
 
 ## Surface
-Due to the fact there will be a lot of bursts of colour through the imagery of the products, I thought it would be best to keep surrounding colours minimal as to not over-crowd the page and avoid distraction for users. I will use an accent colour of <span style="color:#ffc1cc">Bubblegum Pink (#ffc1cc) </span> for the navigation menu, footer and buttons. The font used will be [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?query=playfair), taken from [Google Fonts](https://fonts.google.com/).
+Due to the fact there will be a lot of bursts of colour through the imagery of the products, I thought it would be best to keep surrounding colours minimal as to not over-crowd the page and avoid distraction for users. I will use an accent colour of <span style="color:#ffc1cc">Bubble-gum Pink (#ffc1cc) </span> for the navigation menu, footer and buttons. The font used will be [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?query=playfair), taken from [Google Fonts](https://fonts.google.com/).
 
 ## Wireframes 
 Below is a preview of the Home Page wireframes for desktop, tablet and mobile created on [Balsamiq](https://balsamiq.com/). The individual desktop, tablet and mobile wireframes with all pages can be found [here](README-wireframes).
@@ -64,11 +68,11 @@ Below is a preview of the Home Page wireframes for desktop, tablet and mobile cr
 ![wireframes-preview](README-images/wireframes-preview.png)
 
 
-# Project Development 
-
-
 # Features
 
+## Existing Features 
+
+## Features Left to Implement
 
 # Technologies Used
 * [HTML](https://html.com/)
@@ -76,6 +80,7 @@ Below is a preview of the Home Page wireframes for desktop, tablet and mobile cr
 * [JavaScript](https://www.javascript.com/about)
 * [Python](https://www.python.org/) 
 * [Django](https://www.djangoproject.com/)
+* [JSON](https://www.json.org/json-en.html)
 * [Bootstrap](https://getbootstrap.com/)
 * [Pillow](https://pillow.readthedocs.io/en/stable/)
 * [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
