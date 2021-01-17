@@ -22,7 +22,7 @@
                         {% endif %}
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
-                            <p class="card-price">{{ product.price }}</p>
+                            <p class="card-price">£{{ product.price }}</p>
                             <a href="{% url 'product_detail' product.id %}" class="btn btn-sm">View More</a>
                         </div>
                     </div>

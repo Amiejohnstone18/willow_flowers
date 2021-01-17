@@ -9,7 +9,7 @@
 {% block content %}
 
 
-<div class="container">
+<div class="container full-view">
     <div class="row">
         <div class="col">
             <div class="row">
@@ -24,13 +24,19 @@
                         {% endif %}
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="details-container">
-                    <h2 class="product-name">{{ product.name }}</h2>
-                    <p class="description">{{ product.description }}</p>
-                    <p class="price">{{ product.price }}</p>
-                    <button type="button" class="btn btn-sm">Add to basket</button>
+                <div class="col-12 col-md-6">
+                    <div class="details-container">
+                        <h2 class="product-name">{{ product.name }}</h2>
+                        <p class="description">{{ product.description }}</p>
+                        <p class="price">£{{ product.price }}</p>
+                        <div id="heart-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-sm">Add to basket</button>
+                    </div>
                 </div>
             </div>
         </div>

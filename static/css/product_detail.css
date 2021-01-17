@@ -1,24 +1,50 @@
+/* Div */
+.full-view {
+    margin-top: 5em;
+}
+
+
 /* Product Name */
 .product-name {
     font-family:'Playfair Display', serif;
     text-align: center;
     color: black;
-    font-size: 26px;
+    font-size: 40px;
 }
 
 /* Description */
-.description .price {
+.description  {
     font-family:'Playfair Display', serif;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 2em;
+}
+
+/* Price */
+.price {
+    font-family:'Playfair Display', serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Icons */
+#heart-icon {
+    font-size: 2em;
+    float: right;
+}
 
+#heart-icon:hover{
+    font-size: 2.2em;
+}
+
+/* Button */
 .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
     color: white;
+    float: right;
+    vertical-align: bottom;
 }
 
 .btn:hover {
