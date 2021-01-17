@@ -7,7 +7,7 @@ def contactview(request):
     email=''
     comment=''
 
-# http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
+# Code from- http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
 # A view to return the contact form
 
     form= ContactForm(request.POST or None)
