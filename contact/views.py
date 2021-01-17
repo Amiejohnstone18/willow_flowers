@@ -3,6 +3,7 @@ from .forms import ContactForm
 from django.core.mail import send_mail
 
 def contactview(request):
+    """ A view to return the contact page """
     name=''
     email=''
     comment=''

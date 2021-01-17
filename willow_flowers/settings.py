@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'contact',
+    'basket',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'basket.contexts.basket_contents',
             ],
         },
     },
