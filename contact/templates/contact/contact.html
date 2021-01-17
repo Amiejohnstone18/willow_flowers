@@ -8,4 +8,16 @@
 
 {% block content %}
 
+<h1>Get in Touch</h1>
+
+<!-- http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php -->
+<div class="container-fluid">
+<form action="" method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit"/>
+</form>
+</div>
+
+
 {% endblock %}
