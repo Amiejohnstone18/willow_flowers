@@ -7,15 +7,15 @@ The purpose of this website is to enable consumers to purchase items, such as pl
 
 # Contents
 * [UX Design](#UX-Design)
-    * [Strategy](##strategy)
-    * [Scope](##Scope)
-    * [Structure](##Structure)
+    * [Strategy](#strategy)
+    * [Scope](#Scope)
+    * [Structure](#Structure)
     * [Skeleton](##Skeleton)
-    * [Surface](##Surface)
-    * [Wireframes](##Wireframes)
+    * [Surface](#Surface)
+    * [Wireframes](#Wireframes)
 * [Features](#Features)
-    * [Existing Features](##Existing-features)
-    * [Features Left to Implement](##Features-Left-to-Implement)
+    * [Existing Features](#Existing-features)
+    * [Features Left to Implement](#Features-Left-to-Implement)
 * [Technologies Used](#Technologies-Used)
 * [Testing](#Tesing)
 * [Deployment](#Deployment)
@@ -57,15 +57,15 @@ Information architecture will be organised via product information. Bootstrap ca
 ## Skeleton
 The navigation menu will be divided like so:
 
-![Nav-links-menu](README-images/Nav-links-menu.png)
+![Nav-links-menu](documents/images/nav-links-menu.png)
 
 ## Surface
 Due to the fact there will be a lot of bursts of colour through the imagery of the products, I thought it would be best to keep surrounding colours minimal as to not over-crowd the page and avoid distraction for users. I will use an accent colour of <span style="color:#ffc1cc">Bubble-gum Pink (#ffc1cc) </span> for the navigation menu, footer and buttons. The font used will be [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?query=playfair), taken from [Google Fonts](https://fonts.google.com/).
 
 ## Wireframes 
-Below is a preview of the Home Page wireframes for desktop, tablet and mobile created on [Balsamiq](https://balsamiq.com/). The individual desktop, tablet and mobile wireframes with all pages can be found [here](README-wireframes).
+Below is a preview of the Home Page wireframes for desktop, tablet and mobile created on [Balsamiq](https://balsamiq.com/). The individual desktop, tablet and mobile wireframes with all pages can be found [here](documents/wireframes).
 
-![wireframes-preview](README-images/wireframes-preview.png)
+![wireframes-preview](documents/images/wireframes-preview.png)
 
 
 # Features
