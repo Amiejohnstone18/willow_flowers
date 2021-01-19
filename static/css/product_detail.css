@@ -37,6 +37,11 @@
     font-size: 2.2em;
 }
 
+/* Quanitiy*/
+p {
+    font-family:'Playfair Display', serif;
+}
+
 /* Add to basket button */
 .btn {
     background-color:#ffc1cc;
