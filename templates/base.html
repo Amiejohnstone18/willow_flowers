@@ -65,7 +65,7 @@
             <!-- Far Right icons -->
             <div class="corner-icons">
                 <!-- Favouties -->
-                <i class="fas fa-heart" href="{% url 'favourites' %}"></i>
+                <a class="favourites" href="{% url 'favourites' %}"><i class="fas fa-heart"></i></a>
                 <!-- User Account-->
                 <div class="col-12 col-lg-4 my-auto">
                     <ul class="list-inline list-unstyled text-center">
@@ -94,8 +94,8 @@
                             <a class="{% if grand_total %}text-info text-white{% else %}text-white{% endif %} nav-link"
                                 href="{% url 'view_basket' %}">
                                 <div class="text-center">
-                                    <div><i class="fas fa-shopping-basket"></i></div>
-                                    <p class="my-0">
+                                    <div class="basket"><i class="fas fa-shopping-basket"></i></div>
+                                    <p class="my-0 basket">
                                         {% if grand_total %}
                                         £{{ grand_total | floatformat:2 }}
                                         {% else %}
@@ -108,7 +108,7 @@
                     </ul>
                 </div>
                 <!-- Seach -->
-                <i class="fas fa-search"></i>
+                <a class="search" href="{% url 'search' %}"><i class="fas fa-search"></i></a>
             </div>
         </div>
     </header>

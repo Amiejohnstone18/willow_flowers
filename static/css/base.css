@@ -23,6 +23,37 @@
     font-size: 1.2em;
 }
 
+.favourites {
+    color: white;
+    font-size: 1.2em;
+}
+
+.favourites:hover {
+    color: white;
+    font-size: 1.3em;
+}
+
+.basket {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.basket:hover {
+    color: white;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.search {
+    color: white;
+    font-size: 1.2em;
+}
+
+.search:hover {
+    color: white;
+    font-size: 1.3em;
+}
 
 /* Nav Links */
 .navbar-toggler {

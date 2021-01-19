@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<!-- search CSS -->
+<link rel="stylesheet" href="{% static 'css/search.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+<h1>Search for a product</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col 12">
+            <form method="GET" action="{% url 'products' %}">
+                <i class="fas fa-search" id="search-icon">&nbsp;<input class="search" type="text"
+                        placeholder="Search"></i>
+                <button class="btn btn-sm submit-search" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

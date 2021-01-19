@@ -1,0 +1,38 @@
+/* Page Title */
+h1{
+    text-align: center;
+    font-family:'Playfair Display', serif;
+    color: #ffc1cc;
+    margin-top: 1em;
+}
+
+/* Form */
+form {
+    margin-top: 0.5em;
+}
+
+/* Search */
+#search-icon {
+    font-size: 1.5em;
+    color: #ffc1cc;
+}
+
+.search {
+    font-family:'Playfair Display', serif;
+    font-size: 18px;
+}
+
+/* search button */
+.btn {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+}
