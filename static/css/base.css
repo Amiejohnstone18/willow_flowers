@@ -1,11 +1,12 @@
-/* Logo */
+/* Navbar */
 .top-nav {
     background-color: #ffc1cc;
     font-family: 'Playfair Display', serif;
     color: white;
-    height: 15em;
+    height: 5em;
 }
 
+/* Logo */
 .navbar-brand {
     color: white;
     font-size: 30px;
@@ -17,43 +18,59 @@
 }
 
 /* Icons */
-.corner-icons {
+.icons {
     float: right;
-    padding-top: 0.3em;
-    font-size: 1.2em;
+}
+
+.col {
+    margin-top: 0.5em;
 }
 
 .favourites {
     color: white;
-    font-size: 1.2em;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .favourites:hover {
     color: white;
-    font-size: 1.3em;
+    font-size: 19px;
 }
 
 .basket {
     color: white;
-    font-size: 1.2em;
-    text-decoration: underline;
+    font-size: 18px;
 }
 
 .basket:hover {
     color: white;
-    font-size: 1.3em;
     text-decoration: underline;
 }
 
 .search {
     color: white;
-    font-size: 1.2em;
+    font-size: 18px;
+    padding-left: 10px;
 }
 
 .search:hover {
     color: white;
-    font-size: 1.3em;
+    font-size: 19px;
 }
+
+#user{
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#user:hover{
+    color: white;
+    font-size: 19px;
+}
+
 
 /* Nav Links */
 .navbar-toggler {
@@ -87,28 +104,30 @@ span .navbar-toggler-icon {
 
 /* Footer */
 footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #ffc1cc;
-    margin-top: 3em;
-    margin-bottom: 0;
-    height: 3em;
+    margin-top: 0.5em;
+}
+
+.copy-right {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: white;
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
 }
 
 .social-icons{
-    font-size: 1em;
+    font-size: 1.5em;
     float: right;
-    padding: 0.5em;
-    padding-left: 2px;
-    padding-top: 1em;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
-#twitter{
-    color: white;
-}
-
-#instagram{
-    color: white;
-}
-
-#pinterest {
-    color: white;
-}

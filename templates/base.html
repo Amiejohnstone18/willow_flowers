@@ -51,7 +51,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="media/favicon.ico" />
 
-
     <title>Willow Flowers</title>
 </head>
 
@@ -62,56 +61,54 @@
     <header>
         <div class="container-fluid top-nav">
             <a class="navbar-brand" href="{% url 'home' %}">Willow Flowers</a>
-            <!-- Far Right icons -->
-            <div class="corner-icons">
-                <!-- Favouties -->
-                <a class="favourites" href="{% url 'favourites' %}"><i class="fas fa-heart"></i></a>
-                <!-- User Account-->
-                <div class="col-12 col-lg-4 my-auto">
-                    <ul class="list-inline list-unstyled text-center">
-                        <li class="list-inline-item dropdown">
-                            <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center">
-                                    <div><i class="fas fa-user"></i></div>
-                                </div>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                <a href="#" class="dropdown-item">Admin</a>
-                                {% endif %}
-                                <a href="#" class="dropdown-item">Account</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
-                            </div>
-                        </li>
-                        <!-- Shopping Basket -->
-                        <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info text-white{% else %}text-white{% endif %} nav-link"
-                                href="{% url 'view_basket' %}">
-                                <div class="text-center">
-                                    <div class="basket"><i class="fas fa-shopping-basket"></i></div>
-                                    <p class="my-0 basket">
-                                        {% if grand_total %}
-                                        £{{ grand_total | floatformat:2 }}
-                                        {% else %}
-                                        £0.00
-                                        {% endif %}
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="row icons">
+                <div class="col">
+                    <a class="favourites" href="{% url 'favourites' %}"><i class="fas fa-heart"></i></a>
                 </div>
-                <!-- Seach -->
-                <a class="search" href="{% url 'search' %}"><i class="fas fa-search"></i></a>
+                <div class="col">
+                    <li class="list-inline-item dropdown">
+                        <a class="nav-link-user" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div><i class="fas fa-user" id="user"></i></div>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a href="#" class="dropdown-item">Admin</a>
+                            {% endif %}
+                            <a href="#" class="dropdown-item">Account</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                </div>
+                <div class="col">
+                    <a class="search" href="{% url 'search' %}"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="col">
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info text-white{% else %}text-white{% endif %} nav-link-basket"
+                            href="{% url 'view_basket' %}">
+                            <div class="text-center">
+                                <div class="basket"><i class="fas fa-shopping-basket"></i></div>
+                                <p class="my-0 basket">
+                                    {% if grand_total %}
+                                    £{{ grand_total | floatformat:2 }}
+                                    {% else %}
+                                    £0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </div>
             </div>
         </div>
     </header>
+
 
     <!-- Nav Links -->
     <nav class="navbar navbar-expand-lg w-100">
@@ -119,7 +116,6 @@
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav w-auto mx-auto">
                 <li class="nav-item">
@@ -176,19 +172,27 @@
     <!-- Footer -->
     <footer>
         <div class="container-fluid">
-            <div class="footer">
-                <div class="social-icons">
-                    <a href="https://twitter.com/login?lang=en-gb" target="_blank"><i class="fab fa-twitter-square"
-                            id="twitter"></i></a>
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
-                            class="fab fa-instagram-square" id="instagram"></i></a>
-                    <a href="https://www.pinterest.co.uk/" target="_blank"><i class="fab fa-pinterest-square"
-                            id="pinterest"></i></a>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="row">
+                        <br>
+                        <div class="col-sm-6">
+
+                            <p class="copy-right text-center">©2021 Amie Johnstone (For Educational Purposes Only)</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://twitter.com/login?lang=en-gb" target="_blank"><i
+                                    class="fab fa-twitter-square social-icons" id="twitter"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                                    class="fab fa-instagram-square social-icons" id="instagram"></i></a>
+                            <a href="https://www.pinterest.co.uk/" target="_blank"><i
+                                    class="fab fa-pinterest-square social-icons" id="pinterest"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
 
 </body>
 
