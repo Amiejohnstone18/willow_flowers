@@ -1,0 +1,59 @@
+.checkout {
+   font-family:'Playfair Display', serif;
+    text-align: center;
+    color: #ffc1cc;
+}
+
+.form-text {
+    font-family:'Playfair Display', serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.details {
+    font-family:'Playfair Display', serif;
+}
+
+.delivery {
+    font-family:'Playfair Display', serif;
+}
+
+.payment {
+    font-family:'Playfair Display', serif;
+}
+
+.payment-total {
+    font-family:'Playfair Display', serif;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.pay-now {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.pay-now:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.basket {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: left;
+    vertical-align: bottom;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.basket:hover {
+    color: white;
+    text-decoration: underline;
+}

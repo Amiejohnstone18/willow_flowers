@@ -3,17 +3,17 @@
 
 {% block extra_css %}
 <!-- Basket CSS -->
-<link rel="stylesheet" href="{% static 'css/checkout.css' %}" />
+<link rel="stylesheet" href="{% static 'css/checkout_success.css' %}" />
 {% endblock %}
 
 {% block content %}
 
-<h1 class="basket">Thank you for your order</h1>
+<h1 class="order-confirm">Thank you for your order</h1>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <p class="form-text">Your order confirmation has been sent to {{ order.email }}</p>
+            <p class="confirm-text">Your order confirmation has been sent to <strong>{{ order.email }}</strong>.</p>
             <div class="home-button">
                 <a href="{% url 'home' %}" class="btn btn-sm">Home</a>
             </div>

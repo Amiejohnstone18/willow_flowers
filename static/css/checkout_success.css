@@ -1,0 +1,29 @@
+.order-confirm {
+font-family: 'Playfair Display', serif;
+text-align: center;
+color: #ffc1cc;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.confirm-text {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10em;
+}
+
+.btn {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+}
