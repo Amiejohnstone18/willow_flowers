@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<!-- Basket CSS -->
+<link rel="stylesheet" href="{% static 'css/checkout.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+<h1 class="basket">Checkout</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="form-text">Fill out your details to complete your purchase</p>
+            <form action="{% url 'checkout' %}" method="POST" id="paymnet-form">
+                {% csrf_token %}
+                <fieldset class="details">
+                    <legend class="fieldset-label">Details</legend>
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                    {{ order_form.phone_number | as_crispy_field }}
+                </fieldset>
+                <fieldset class="delivery">
+                    <legend class="fieldset-label">Delivery Address</legend>
+                    {{ order_form.street_address| as_crispy_field }}
+                    {{ order_form.town | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                </fieldset>
+                <fieldset class="payment">
+                    <legend class="fieldset-label">Payment</legend>
+                    <!-- Stripe Payment -->
+                    <div id="card-element"></div>
+                    <!-- Payment Errors -->
+                    <div id="card-errors" role="alert"></div>
+                </fieldset>
+                <!-- Submit Buttons -->
+                <button class="submit-button btn btn-sm">
+                    <a href="{% url 'view_basket' %}" class="btn btn-sm">
+                        <span>Basket</span>
+                    </a>
+                </button>
+                <button class="submit-button btn btn-sm">
+                    <span>Pay Now</span>
+                </button>
+                <p>Total: <strong>${{ grand_total|floatformat:2 }}</strong></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

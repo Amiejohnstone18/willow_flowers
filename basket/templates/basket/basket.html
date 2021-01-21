@@ -69,7 +69,7 @@
 <div class="container">
     <p class="total-price">Total: £{{ total|floatformat:2 }}</p>
     <br>
-    <a href="#" class="btn btn-sm checkout">
+    <a href="{% url 'checkout' %}" class="btn btn-sm checkout">
         Checkout
     </a>
 </div>

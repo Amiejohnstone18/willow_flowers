@@ -2,7 +2,7 @@ from django import forms
 from .models import Order
 
 
-class orderform(forms.Modelform):
+class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
@@ -13,26 +13,24 @@ class orderform(forms.Modelform):
         """
         Placeholder for form and field focus
         """
-        super().__init__(*args **kwargs)
+        super().__init__(*args, **kwargs)
         placeholders = {
             'full_name': 'Full Name',
             'email': 'Email',
-            'phone_number' : 'Phone Number',
-            'Stree_address' : 'Street Address',
-            'town' : 'Town',
-            'county' : 'County',
-            'postcode' : 'Postcode',
-            'country' :  'Country',
+            'phone_number': 'Phone Number',
+            'street_address': 'Street Address',
+            'town': 'Town',
+            'county': 'County',
+            'postcode': 'Postcode',
+            'country':  'Country',
         }
 
-        self.felds['full_name'].widget.attrs['autofocus'] = True
+        self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
-                placeholder = f'{placeholder[field]} *'
+                placeholder = f'{placeholders[field]} *'
             else:
                 placeholder = placeholders[field]
-            self.fields[field.widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
-
-        }
