@@ -175,3 +175,8 @@ EMAIL_HOST_USER= 'amiejohnstone18@gmail.com'
 EMAIL_HOST_PASSWORD= 'password'
 EMAIL_USE_TLS= True
 EMAIL_PORT= 587
+
+#Stripe
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
