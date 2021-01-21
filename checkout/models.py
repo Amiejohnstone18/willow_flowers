@@ -39,7 +39,7 @@ class Order(models.Model):
 
     def save(self, *args, **kwargs):
         """
-        Override Save method
+        Override Save method to set an order number
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
@@ -53,14 +53,14 @@ class OrderLineItem(models.Model):
     Order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
     Product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    Lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def save(self, *args, **kwargs):
         """
-        Override Save method
+        Override Save method to set lineitem total and update total amount
         """
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return self.order_number
+        return f'PK {self.product.pk} on order {self.order.order_number}'
