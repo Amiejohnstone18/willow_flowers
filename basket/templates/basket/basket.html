@@ -8,7 +8,7 @@
 
 {% block content %}
 
-<h1 class="basket">Your Basket</h1>
+<h1>Your Basket</h1>
 
 {% if basket_items %}
 
@@ -64,10 +64,12 @@
     </div>
 </div>
 {% endfor %}
-
+<br>
+<br>
 <!-- Total Price/ Checkout -->
 <div class="container">
-    <p class="total-price">Total: £{{ total|floatformat:2 }}</p>
+    <p class="total-price">Basket Total: <strong>£ {{ total|floatformat:2 }}</strong></p>
+    <br>
     <br>
     <a href="{% url 'checkout' %}" class="btn btn-sm checkout">
         Checkout
@@ -79,10 +81,15 @@
 
 <!-- Empty Basket -->
 {% else %}
-<h2>Your basket is empty<h2>
-        <a href="{% url 'home' %}" class="btn btn-sm">Home</a>
-        {% endif %}
+<div class="container empty-basket ">
+    <div class="row">
+        <div class="col-12">
+            <h1>Your basket is empty</h1>
+            <a href="{% url 'home' %}" class="btn btn-sm">Home</a>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 
-
-        {% endblock %}
+{% endblock %}
