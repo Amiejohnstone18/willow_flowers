@@ -19,14 +19,8 @@ def contactview(request):
         email = form.cleaned_data.get("email")
         comment = form.cleaned_data.get("comment")
 
-        if request.user.is_authenticated():
-            subject = str(request.user) + "'s Comment"
-        else:
-            subject = "A Visitor's Comment"
-
-
         comment = name + " with the email, " + email + ", sent the following message:\n\n" + comment;
-        send_mail(subject, comment, 'dlhylton@gmail.com', [email])
+        send_mail(subject, comment, '', [email])
 
 
         context = {'form': form}

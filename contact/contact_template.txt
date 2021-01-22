@@ -1,0 +1,8 @@
+Contact Nme:
+{{ name }}
+
+Email:
+{{ email }}
+
+Message:
+{{ form_message|safe|striptags }}

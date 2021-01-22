@@ -13,10 +13,10 @@
 <!-- Code from - http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php -->
 <div class="container">
     <p> If you have a question regarding an item or would like to contact us about your order, please fill in the below form and a member of our team will be in touch within 24 hours.</p>
-<form action="" method="POST">
+<form role="form" action="" method="POST">
 {% csrf_token %}
 {{ form.as_p }}
-<input type="submit" value="Submit"/>
+<button type="submit" value="Submit">Submit</button>
 </form>
 </div>
 

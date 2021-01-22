@@ -41,7 +41,7 @@
                         <br>
                         <br>
                         <br>
-                        <form class="form update-form" method="POST">
+                        <form class="form update-form" method="POST" action="{% url 'adjust_basket' item.item_id %}">
                             {% csrf_token %}
                             <div class="form">
                                 <div class="col-12">
@@ -90,6 +90,24 @@
     </div>
 </div>
 {% endif %}
+{% endblock %}
 
 
+<!-- JS Adjust bag -->
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
+<script type="text/javascript">
+    $('.update-link').click(function (e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    $.post(url, data)
+        .done(function () {
+            location.reload();
+        });
+    })
+</script>
 {% endblock %}
