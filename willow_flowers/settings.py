@@ -78,10 +78,10 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # Required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media', # If a product doesn't have an image
+                'django.template.context_processors.media',  # If a product doesn't have an image
                 'basket.contexts.basket_contents',
             ],
             'builtins': [
@@ -93,7 +93,7 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = (
-     # Needed to login by username in Django admin, regardless of `allauth`
+    # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
@@ -110,7 +110,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL= '/'
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'willow_flowers.wsgi.application'
 
@@ -170,14 +170,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Contact Email
-EMAIL_HOST= 'smtp.gmail.com'
-EMAIL_HOST_USER= 'amiejohnstone18@gmail.com'
-EMAIL_HOST_PASSWORD= 'password'
-EMAIL_USE_TLS= True
-EMAIL_PORT= 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'amiejohnstone18@gmail.com'
+EMAIL_HOST_PASSWORD = 'password'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 
-#Stripe
-STRIPE_CURRENCY = 'usd'
+# Stripe
+STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+

@@ -4,9 +4,9 @@ from django.core.mail import send_mail
 
 def contactview(request):
     """ A view to return the contact page """
-    name=''
-    email=''
-    comment=''
+    name = ''
+    email = ''
+    comment = ''
 
 # Code from- http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
 # A view to return the contact form
