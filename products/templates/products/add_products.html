@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<!-- Product Admin CSS -->
+<link rel="stylesheet" href="{% static 'css/checkout.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+<h1 class="checkout">Product Admin</h1>
+<h3>Add a product</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 md-6">
+            <form method="POST" action="{% url 'add_product' %}" class="form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="product-btn">
+                    <a class="btn btn-sm" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-sm" type="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
