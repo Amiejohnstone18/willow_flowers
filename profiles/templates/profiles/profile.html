@@ -20,14 +20,34 @@
             </form>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <p class="previous-orders">Previous Orders</p>
-            {{ orders }}
-        </div>
-    </div>
-</div>
+    <table class="table table-bordered order-history">
+        <thead>
+            <tr>
+                <th scope="col">Order Number</th>
+                <th scope="col">Date</th>
+                <th scope="col">Items</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        {% for order in order %}
+        <tbody>
+            <tr>
+                <th scope="row">
+                    <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">{{ order.order_number|truncatechars:8 }}</a>
+      </th>
+      <td>{{ order.date }}</td>
+      <td>
+          <ul class=" list">
+                        {% for item in order.lineitems.all %}
+                        <li>{{ item.product.name }} x{{ item.quantity }}</li>
+                        {% endfor %}
+                        </ul>
+                        </td>
+                <td>£ {{ order.grand_total }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {{ profile }}
 
-{{ profile }}
-
-{% endblock %}
+    {% endblock %}
