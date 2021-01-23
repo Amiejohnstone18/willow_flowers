@@ -1,0 +1,10 @@
+Hello {{ order.full_name }}
+
+Your order confimation number is {{ order.order_number }}
+Order date {{ order.date }}
+
+Order Total: £{{ order.grand_total }}
+
+Your purchase will be shipped to {{ order.street_address }}, {{ order.town }}, {{ order.county }}, {{ order.postcode }}, {{ order.country }}.
+
+Thank you for your recent purchase from Willow Flowers. 
