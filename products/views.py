@@ -19,9 +19,8 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-
     context = {
-        'products': products, 
+        'products': products,
         'current_categories': categories,
     }
 
@@ -48,10 +47,29 @@ def add_product(request):
             form.save()
     else:
         form = ProductForm()
+
     template = 'products/add_products.html'
     context = {
         'form': form,
     }
 
+    return render(request, template, context)
+
+
+def update_product(request, product_id):
+    """ Admin can update products """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('product_detail', args=[product.id]))
+    form = ProductForm(instance=product)
+
+    template = 'products/update_products.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
 
     return render(request, template, context)
