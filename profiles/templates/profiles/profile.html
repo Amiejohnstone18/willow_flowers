@@ -7,8 +7,27 @@
 {% endblock %}
 
 {% block content %}
+<h1>My Account</h1>
 
-<h1 class="checkout">My Account</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <p>Delivery Information</p>
+            <form action="{% url 'profile' %}" method="POST" id="update-profile-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="btn btn-sm">Update</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="previous-orders">Previous Orders</p>
+            {{ orders }}
+        </div>
+    </div>
+</div>
+
 {{ profile }}
 
 {% endblock %}
