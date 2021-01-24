@@ -52,15 +52,16 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <img src="media/birthday.jpg" href="{% url 'products' %}?category=birthday" class="img-circle"
-                alt="birthday">
+            <a href="{% url 'products' %}?category=birthday"><img src="media/birthday.jpg" class="img-circle"
+                    alt="birthday"></a>
         </div>
-        <div class="col-sm">
-            <img src="media/bonsai.jpg" href="{% url 'products' %}?category=inside_plants,outside_plants"
-                class="img-circle" alt="plants">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <a href="{% url 'products' %}?category=inside_plants"><img src="media/bonsai.jpg" class="img-circle"
+                    alt="plants"></a>
         </div>
-        <div class="col-sm">
-            <img src="media/wedding.jpg" href="{% url 'products' %}?category=wedding" class="img-circle" alt="wedding">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <a href="{% url 'products' %}?category=wedding"><img src="media/wedding.jpg" class="img-circle"
+                    alt="wedding"></a>
         </div>
     </div>
 </div>
@@ -122,9 +123,9 @@
 
 <!-- Dots/bullets/indicators -->
 <div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 

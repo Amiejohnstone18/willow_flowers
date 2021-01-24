@@ -1,30 +1,32 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Category
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 from .forms import ProductForm
 
-
-# Create your views here.
+from .models import Product, Category
 
 
 def all_products(request):
-    """ A view to return the all the flowers, including sorting and searches """
+    """ A view to search all products"""
 
     products = Product.objects.all()
     query = None
-    categories = None
 
     if request.GET:
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                return redirect(reverse('products'))
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(queries)
 
     context = {
         'products': products,
-        'current_categories': categories,
+        'search_term': query,
     }
-
+    
+    print(query) 
     return render(request, 'products/products.html', context)
 
 

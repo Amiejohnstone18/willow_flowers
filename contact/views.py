@@ -7,7 +7,7 @@ def contactview(request):
     """ A view to return the contact page """
     name = ''
     email = ''
-    comment = ''
+    message = ''
 
 # Code from- http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
 
@@ -17,10 +17,10 @@ def contactview(request):
     if form.is_valid():
         name = form.cleaned_data.get("name")
         email = form.cleaned_data.get("email")
-        comment = form.cleaned_data.get("comment")
+        message = form.cleaned_data.get("comment")
 
-        comment = name + " with the email, " + email + ", sent the following message:\n\n" + comment;
-        send_mail(subject, comment, '', [email])
+        message = name + " with the email, " + email + ", sent the following message:\n\n" + message;
+        send_mail(message, '', [email])
 
 
         context = {'form': form}
