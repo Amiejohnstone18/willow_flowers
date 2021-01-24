@@ -73,12 +73,8 @@
 
 
 /* Nav Links */
-.navbar-toggler {
-    background-color: white;
-}
-
-span .navbar-toggler-icon {
-    color: #ffc1cc !important;
+button.toggler {
+    color: white;
 }
 
 .navbar {

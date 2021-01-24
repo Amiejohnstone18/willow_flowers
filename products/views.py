@@ -12,7 +12,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
 
-    if request.GET:
+    if request.method == 'GET':
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -25,8 +25,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
     }
-    
-    print(query) 
+
     return render(request, 'products/products.html', context)
 
 
