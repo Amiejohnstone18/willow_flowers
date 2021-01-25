@@ -15,4 +15,4 @@ def add_to_favourites(request, item_id):
 
     request.session['favourites'] = favourites
     print(request.session['favourites'])
-    return redirect(redirect_url)
+    return render(request, 'favourites/favourites.html')
