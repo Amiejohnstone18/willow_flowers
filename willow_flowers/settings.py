@@ -187,6 +187,12 @@ EMAIL_USE_TLS = False
 EMAIL_PORT = 1025
 
 if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETER = {
+        'Expires': 'Thu, 31 dec 2099 20:00:00 GTM',
+        'CacheControl': 'max-age=94608000',
+    }
+    
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'willow-flowers'
     AWS_S3_REGION_NAME = 'eu-west-2'
