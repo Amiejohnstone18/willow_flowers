@@ -1,1 +1,1 @@
-web : gunicorn willow-flowers.wsgi:application
+web: gunicorn willow_flowers.wsgi:application
