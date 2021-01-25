@@ -27,9 +27,15 @@
                         <h2 class="product-name">{{ product.name }}</h2>
                         <p class="description">{{ product.description }}</p>
                         <p class="price">£{{ product.price }}</p>
-                        <div id="heart-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
+                        <form class="form" action="{% url 'add_to_favourites' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="submit" class="btn btn-sm" value="Add to favourites">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </form>
+
+
+
+
                         <br>
                         <br>
                         <br>
