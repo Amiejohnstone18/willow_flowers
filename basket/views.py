@@ -26,7 +26,7 @@ def add_to_basket(request, item_id):
 
 
 def adjust_basket(request, item_id):
-    """ Add items in the basket """
+    """ Change items in the basket """
 
     quantity = int(request.POST.get('quantity'))
     basket = request.session.get('basket', {})

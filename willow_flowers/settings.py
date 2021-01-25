@@ -84,6 +84,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',  # If a product doesn't have an image
                 'basket.contexts.basket_contents',
+                'favourties.contexts.favourties_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',

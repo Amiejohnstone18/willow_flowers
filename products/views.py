@@ -10,20 +10,9 @@ def all_products(request):
     """ A view to search all products"""
 
     products = Product.objects.all()
-    query = None
-
-    if request.method == 'GET':
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                return redirect(reverse('products'))
-
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
 
     context = {
-        'products': products,
-        'search_term': query,
+        'products' : products,
     }
 
     return render(request, 'products/products.html', context)

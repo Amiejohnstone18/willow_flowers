@@ -1,9 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
 
-
-def favourites(request):
-    """ A view to return the user favourites """
-
+def view_favourites(request):
+    """ A view to return the favourites """
     return render(request, 'favourites/favourites.html')

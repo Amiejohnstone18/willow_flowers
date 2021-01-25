@@ -2,14 +2,24 @@
 {% load static %}
 
 {% block extra_css %}
-<!-- Index CSS -->
+<!-- Favourites CSS -->
 <link rel="stylesheet" href="{% static 'css/favourites.css' %}" />
 {% endblock %}
 
 {% block content %}
+<h1>Favourites</h1>
+<div class="container">
+    {% if favourites_items %}
+    <div class="row">
+        <div class="col-sm-12 md-4">
 
-<h1> Favourites </h1>
 
-
-
+        </div>
+    </div>
+    {% else %}
+    <p>No items in your favourites</p>
+    <button class="btn btn-sm" href="#">Home</button>
+    {% endif %}
+</div>
 {% endblock %}
+

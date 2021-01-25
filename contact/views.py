@@ -2,25 +2,27 @@ from django.shortcuts import render
 from .forms import ContactForm
 from django.core.mail import send_mail
 
+# Code inspired from http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
 
 def contactview(request):
-    """ A view to return the contact page """
     name = ''
     email = ''
     message = ''
-
-# Code from- http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
-
-# A view to return the contact form
 
     form = ContactForm(request.POST or None)
     if form.is_valid():
         name = form.cleaned_data.get("name")
         email = form.cleaned_data.get("email")
-        message = form.cleaned_data.get("comment")
+        message =form.cleaned_data.get("message")
 
-        message = name + " with the email, " + email + ", sent the following message:\n\n" + message;
-        send_mail(message, '', [email])
+        if request.user.is_authenticated():
+            subject = str(request.user) + "'s Comment"
+        else:
+            subject = "A user's message"
+
+
+        message = name + " with the email, " + email + ", sent the following message:\n\n" + comment;
+        send_mail(subject, message, from_email, 'amiejohnstone18@gmail.com', recipient_list, [amiejohnstone18@gmail.com])
 
 
         context = {'form': form}
