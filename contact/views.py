@@ -17,10 +17,14 @@ def contactview(request):
 
         subject = "A user's message"
 
-
-        message = name + " with the email, " + email + ", sent the following message:\n\n" + message;
-        send_mail(subject, message, 'amiejohnstone18@gmail.com', 'amiejohnstone18@gmail.com', recipient_list, ["amiejohnstone18@gmail.com"])
-
+        message = name + " with the email, " + email + ", sent the following message:\n\n" + message
+        send_mail(
+            subject,
+            message,
+            'amiejohnstone18@gmail.com',
+            [email],
+            fail_silently=False,
+        )
 
         context = {'form': form}
 

@@ -12,8 +12,15 @@
     {% if favourites_items %}
     <div class="row">
         <div class="col-sm-12 md-4">
-
-
+            {% for item in favourite_items %}
+            {% if item.product.image %}
+            {{ product.name }}
+            {% else %}
+            {{ product.name }}
+            {% endif %}
+            {{ item.product.name }}
+            £{{ item.product.price }}
+            {% endfor %}
         </div>
     </div>
     {% else %}

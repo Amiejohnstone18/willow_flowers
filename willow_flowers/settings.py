@@ -212,9 +212,9 @@ DEFAULT_FROM_EMAIL = 'amiejohnstone18@gmail.com'
 
 
 # Contact Email
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'amiejohnstone18@gmail.com'
-EMAIL_HOST_USER = ''
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'amiejohnstone18@gmail.com'
 EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_PORT = 1025
