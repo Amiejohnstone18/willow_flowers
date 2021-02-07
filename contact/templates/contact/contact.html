@@ -2,22 +2,22 @@
 {% load static %}
 
 {% block extra_css %}
-<!-- Index CSS -->
-<link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+<!-- Contact CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}" />
 {% endblock %}
 
 {% block content %}
 
 <h1>Get in Touch</h1>
-
 <!-- Code from - http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php -->
 <div class="container">
-    <p> If you have a question regarding an item or would like to contact us about your order, please fill in the below form and a member of our team will be in touch within 24 hours.</p>
-<form role="form" action="" method="POST">
-{% csrf_token %}
-{{ form|crispy }}
-<button type="submit" value="Submit">Submit</button>
-</form>
+    <p> If you have a question regarding an item or would like to contact us about your order, please fill in the below
+        form and a member of our team will be in touch within 24 hours.</p>
+    <form role="form" action="" method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-sm" type="submit" value="Submit">Submit</button>
+    </form>
 </div>
 
 

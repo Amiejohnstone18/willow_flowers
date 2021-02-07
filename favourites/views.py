@@ -8,6 +8,7 @@ def view_favourites(request):
 
 
 def add_to_favourites(request, item_id):
+    """ A view to add item to favourites """
     redirect_url = request.POST.get('redirect_url')
     favourites = request.session.get('favourites', [])
 

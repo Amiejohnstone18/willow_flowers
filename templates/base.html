@@ -22,7 +22,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"/>
     {% endblock %}
 
     {% block extra_css %}
@@ -48,7 +48,7 @@
     {% endblock %}
 
     <!-- Favicon -->
-    <!-- <link rel="icon" type="image/ico" href="media/favicon.ico" />-->
+    <link rel="icon" type="image/icon" href="{{ MEDIA_URL }}favicon.ico" />
 
     <title>Willow Flowers</title>
 </head>
@@ -154,9 +154,7 @@
             </ul>
         </div>
     </nav>
-    {% if messages %}
-    <div class="messages-container"></div>
-    {% endif %}
+  
 
     {% block content %}
     {% endblock %}
@@ -190,5 +188,4 @@
     </footer>-->
 
 </body>
-
 </html>

@@ -1,0 +1,29 @@
+/* Header */
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #ffc1cc;
+}
+
+/* Paragraph */
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding-top: 1em;
+}
+
+/* Button */
+.btn {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+}

@@ -3,7 +3,7 @@
 
 {% block extra_css %}
 <!-- Favourites CSS -->
-<link rel="stylesheet" href="{% static 'css/favourites.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/favourites.css' %}" />
 {% endblock %}
 
 {% block content %}
@@ -25,7 +25,7 @@
     </div>
     {% else %}
     <p>No items in your favourites</p>
-    <button class="btn btn-sm" href="#">Home</button>
+    <button class="btn btn-sm" href="{% url 'home' %}">Home</button>
     {% endif %}
 </div>
 {% endblock %}

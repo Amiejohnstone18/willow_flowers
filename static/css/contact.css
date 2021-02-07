@@ -3,6 +3,7 @@ h1 {
     font-family: 'Playfair Display', serif;
     text-align: center;
     margin-top: 0.5em;
+    color: #ffc1cc;
 }
 
 p {
@@ -17,9 +18,17 @@ form {
     margin-top: 0.5em;
 }
 
-input{
+/* Button */
+.btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
     color: white;
-    border: none;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
 }
