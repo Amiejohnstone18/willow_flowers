@@ -27,6 +27,7 @@ The purpose of this website is to enable consumers to purchase items, such as pl
     * [Browser Capability](#Browser-Capability)
     * [Responsive Testing](#Responsive-Testing)
     * [User Stories](#User-Stories)
+    * [Feature Testing](#Feature-Testing)
     * [Problems Encountered](#Problems-Encountered)
 * [Deployment](#Deployment)
 * [Credits](#Credits)
@@ -162,19 +163,19 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 *	Contact Form – Allows users to contact Willow Flowers directly by having them fill out a contact form which requires their name, email address and a message to submit.  
 
-** IMAGE
+![contact.pgn](documents/images/contact.png)
 
 *	Customer Testimonials  - These can be found at the bottom of the home page and are used encourage new consumers to purchase products from the site based on previous customer experiences. 
 
-** IMAGE
+![website-testimonials.pgn](documents/images/website-testimonials.png)
 
 *	X3 Image links – On the home page is three circle images which provide links to the categories Birthday, Inside Plants and Wedding. When an image is clicked the user will be taken to that products category of items displayed as product cards. 
 
-** IMAGE
+![x3-images.pgn](documents/images/x3-images.png)
 
 *	Product Cards – While browsing product categories, users will be presented with product cards. These will provide brief information on an items name, image, and price with a button to “view more” which will take the user to that product’s full description. 
 
-** IMAGE
+![product-cards.pgn](documents/images/product-cards.png)
 
 *	Search Functionality – This will be found in the navigation menu and will take a user to a page whereby they are able to enter a word based on a product they would like to find. From here a list of products resulting to that search term will be displayed.
 
@@ -188,17 +189,21 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ** IMAGE
 
-*	Favourite Items – The favourites features allow users to essentially save an item for later. To add a product to their favourites, a user would have to click on a products full description and click on the heart to add it to their list of favourites. A user can access this list at anytime by clicking on the heart in the top right icon navigation. If there are no items to display in the Favourites, the user will be presented with a message “No items in your favourites” and a button leading them back to the Home page. 
+*	Add Favourite Items – The favourites features allow users to essentially save an item for later. To add a product to their favourites, a user would have to click on a products full description and select the button "Add to favourites". 
+
+![add-to-favourites.pgn](documents/images/add-to-favourites.png)
+
+*   View Favourites - A user can access this list at anytime by clicking on the heart in the top right icon navigation. If there are no items to display in the Favourites, the user will be presented with a message “No items in your favourites” and a button leading them back to the Home page. 
 
 ** IMAGE
 
 *	Add Items to Basket – For a user to complete a purchase on a product, they would be required to add that item to their basket. This can be completed by selecting the quantity required on the items full description and selecting “Add to basket”. 
 
-** IMAGE
+![add-to-basket.pgn](documents/images/add-to-basket.png)
 
 *	Update Basket - The basket icon displayed in the top right corner will take the user to a list of items currently in their basket. To add or remove quantities from their basket, the user would manipulate the quantity arrows next to each product and select “Update Basket”. 
 
-** IMAGE
+![update-basket.pgn](documents/images/update-basket.png)
 
 *	Checkout – To complete a purchase the user would be required to browse to their basket and click “Checkout”. They will be taken to a page whereby if they are a logged-in user, their personal information will be auto filled out. If not, the user will be required to fill in the necessary personal fields, along with their payment information. This was built using [Stripe](https://stripe.com/gb?utm_campaign=paid_brand-UK_en_Search_Brand_Stripe-2032860449&utm_medium=cpc&utm_source=google&ad_content=355351450319&utm_term=stripe%20payments&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=Cj0KCQiAyJOBBhDCARIsAJG2h5fdOn7FyoK16NSYU2pwY4gixT-rSAGqwtX9Xm6m-7FI5Cl8J3Lf_90aAod7EALw_wcB) payments. 
 
@@ -212,9 +217,6 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ** IMAGE
 
-*	View Products by Category – The website provides users to browse specific categories of products. By clicking on either “Flowers” or “Plants” in the navigation menu, the user can browse all products available or select the specific category each product falls under. 
-
- ** IMAGE
 
 
 ## Features Left to Implement
@@ -301,6 +303,8 @@ To ensure I was staying organised and keeping in time with the deadline for this
 | **Admin**   | Receive a copy of any contact forms submitted   | So, I can respond accordingly to the customer |
 
 
+## Feature Testing 
+
 ## Problems Encountered 
 * Gitpod showing degraded performance on dashboard, workspace and automatic docker image builds 06/02/2021 – 08/02/2021.
 
@@ -362,7 +366,7 @@ Should you wish to access the URL to the website, that can be found via: [https:
 ## Content
 Customer Testimonials were written by friends Maddy Darvell, Bill Mold and Daisy Lewis.
 
-All flower descriptions were written by me. 
+All product descriptions were written by me. 
 
 
 ## Media
