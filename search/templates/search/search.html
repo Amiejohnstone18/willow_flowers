@@ -10,18 +10,24 @@
 
 <h1>Search for a product</h1>
 
-
+<!-- Code from https://github.com/ckz8780/boutique_ado_v1/blob/be009dd6c8db8c9cbc18aa5b8dd8a04daa194ed0/templates/base.html -->
 <div class="container">
     <div class="row">
-        <div class="col-12">
-            <form method="GET" action="{% url 'products' %}">
-                <i class="fas fa-search" id="search-icon">&nbsp;<input class="search" type="text"
-                        placeholder="Search"></i>
-                <button class="btn btn-sm submit-search" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</div>
-
+        <div class="col sm-12">
+                <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <br>
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon"><i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                </div>
+            </div>
 
 {% endblock %}

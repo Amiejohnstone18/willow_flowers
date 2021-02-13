@@ -1,21 +1,24 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from profiles.models import UserProfile
 from products.models import Product
+from .models import Favourite 
 
 
+@login_required
 def view_favourites(request):
     """ A view to return the favourites """
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        favourites.user_profile = profile
-        favourites.objects.filter()
-        favourites = get_object_or_404(UserProfile, user=request.user)
+        favourite = get_object_or_404(UserProfile, user=request.user)
+        favourite.user_profile = profile
+        favourite.objects.filter()
     else:
-        return redirect('login.html')
+        return redirect('../accounts/login')
 
     template = 'favourites.html'
     context = {
-        'favourites': favourites,
+        'favourite': favourite,
     }
 
     return render(request, template, context)
