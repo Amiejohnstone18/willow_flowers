@@ -140,7 +140,14 @@ main {
    font-family: 'Playfair Display', serif; 
 }
 
-/* Button */
+.allauth-form-inner-content a {
+    font-family: 'Playfair Display', serif; 
+}
+
+.allauth-form-inner-content form {
+    font-family: 'Playfair Display', serif; 
+}
+
 .allauth-form-inner-content .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
