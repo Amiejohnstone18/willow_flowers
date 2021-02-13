@@ -167,7 +167,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 *	Customer Testimonials  - These can be found at the bottom of the home page and are used encourage new consumers to purchase products from the site based on previous customer experiences. 
 
-![website-testimonials.pgn](documents/images/website-testimonials.png)
+![testimonials.pgn](documents/images/testimonials.png)
 
 *	X3 Image links – On the home page is three circle images which provide links to the categories Birthday, Inside Plants and Wedding. When an image is clicked the user will be taken to that products category of items displayed as product cards. 
 
@@ -181,9 +181,9 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ** IMAGE
 
-*	Links to Social Media – Links to [Instagram](https://www.instagram.com/), [Twitter](https://www.instagram.com/) and [Pinterest](https://www.pinterest.co.uk/) are accessible in the bottom right of the page footer. These links will take a user directly to the social platforms in a new browser, to ensure they don’t venture off from Willow Flowers. 
+*	Links to Social Media – Links to [Pinterest](https://www.pinterest.co.uk/), [Instagram](https://www.instagram.com/) and [Twitter](https://www.instagram.com/) are accessible in the bottom right of the page footer. These links will take a user directly to the social platforms in a new browser, to ensure they don’t venture off from Willow Flowers. 
 
-** IMAGE
+![sm-links.pgn](documents/images/sm-links.png)
 
 *	User Profile– Users have the option to create a personal profile whereby they can login and have access to their previous orders. The user will have to click on the user icon at the top of the page and then either login or sign up to create an account. 
 
@@ -256,7 +256,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 *	[Google Fonts](https://fonts.google.com/) – Used for website typography.
 *	[Font Awesome](https://fontawesome.com/) - Used for icons.
 
-# Other Tools 
+## Other Tools 
 
 *	[Adobe illustrator](https://helpx.adobe.com/uk/globalsearch.html?q=illustrator&start_index=0&country=GB&activeScopes=%5B%22helpx%3Alearn%22%2C%22helpx%3Ahelp%22%2C%22helpx%3Acommunities%22%2C%22adobe_com%3Aproduct%22%2C%22adobe_com%3Ablog%22%2C%22adobe_com%3Athought-leadership%22%2C%22adobe_com%3Apartner_extensions%22%2C%22adobe_com%3Aevents%22%2C%22adobe_com%3Acorporate%22%5D&scopeConfigs=%5B%7B%22value%22%3A%22helpx%3Alearn%22%2C%22renderStyle%22%3A%22horiz%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Atrue%7D%2C%7B%22value%22%3A%22helpx%3Ahelp%22%2C%22renderStyle%22%3A%22vert%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Atrue%7D%2C%7B%22value%22%3A%22helpx%3Acommunities%22%2C%22renderStyle%22%3A%22vert%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Atrue%7D%2C%7B%22value%22%3A%22adobe_com%3Aproduct%22%2C%22renderStyle%22%3A%22vert%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Atrue%7D%2C%7B%22value%22%3A%22adobe_com%3Ablog%22%2C%22renderStyle%22%3A%22vert%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Afalse%7D%2C%7B%22value%22%3A%22adobe_com%3Athought-leadership%22%2C%22renderStyle%22%3A%22horiz%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Afalse%7D%2C%7B%22value%22%3A%22adobe_com%3Apartner_extensions%22%2C%22renderStyle%22%3A%22horiz%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Afalse%7D%2C%7B%22value%22%3A%22adobe_com%3Aevents%22%2C%22renderStyle%22%3A%22vert%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Afalse%7D%2C%7B%22value%22%3A%22adobe_com%3Acorporate%22%2C%22renderStyle%22%3A%22vert%22%2C%22seeMoreLink%22%3Anull%2C%22isSelectable%22%3Afalse%7D%5D&filters=%7B%22products%22%3A%5B%5D%7D&banners=%7B%22aboveResults%22%3A%7B%22count%22%3A3%2C%22ids%22%3A%5B%22auto%22%5D%7D%2C%22sidebar%22%3A%7B%22count%22%3A0%2C%22ids%22%3A%5B%5D%7D%7D&ctrls=%7B%22prodFilts%22%3Atrue%7D) - Used to create the logo and favicon.
 *	[Balsamiq](https://balsamiq.com/) – Used to create the wireframes.
@@ -304,6 +304,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 
 ## Feature Testing 
+
 
 ## Problems Encountered 
 * Gitpod showing degraded performance on dashboard, workspace and automatic docker image builds 06/02/2021 – 08/02/2021.

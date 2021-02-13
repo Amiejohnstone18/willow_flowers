@@ -98,11 +98,12 @@ button.toggler {
     font-family: 'Playfair Display', serif;
 }
 
+main {
+    min-height: 100vh;
+}
+
 /* Footer */
 .footer {
-
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: #ffc1cc;
     margin-top: 0.5em;
@@ -127,3 +128,29 @@ button.toggler {
     margin-top: 0.5em;
 }
 
+/* Allauth Templates */
+.allauth-form-inner-content h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #ffc1cc;
+}
+
+.allauth-form-inner-content p {
+   font-family: 'Playfair Display', serif; 
+}
+
+/* Button */
+.allauth-form-inner-content .btn {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+}

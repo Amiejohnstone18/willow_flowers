@@ -1,0 +1,27 @@
+/* Header */
+h1 h3 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #ffc1cc;
+}
+
+/* Form */
+form {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Button */
+.btn {
+    background-color:#ffc1cc;
+    font-family:'Playfair Display', serif;
+    color: white;
+    float: right;
+    vertical-align: bottom;
+    margin-top: 2em;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: underline;
+}
