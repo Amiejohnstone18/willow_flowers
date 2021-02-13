@@ -187,7 +187,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 *	User Profile– Users have the option to create a personal profile whereby they can login and have access to their previous orders. The user will have to click on the user icon at the top of the page and then either login or sign up to create an account. 
 
-** IMAGE
+![user-profile.pgn](documents/images/user-profile.png)
 
 *	Add Favourite Items – The favourites features allow users to essentially save an item for later. To add a product to their favourites, a user would have to click on a products full description and select the button "Add to favourites". 
 

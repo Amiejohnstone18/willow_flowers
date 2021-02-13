@@ -1,16 +1,9 @@
 /* Header */
-h1 {
+h1 h3 {
     font-family: 'Playfair Display', serif;
     text-align: center;
     margin-top: 0.5em;
     color: #ffc1cc;
-}
-
-/* Paragraph */
-p {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    padding-top: 1em;
 }
 
 /* Button */
