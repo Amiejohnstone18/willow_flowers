@@ -73,8 +73,8 @@
 
 
 /* Nav Links */
-button.toggler {
-    color: white;
+.navbar-toggler {
+    background-color: white;
 }
 
 .navbar {

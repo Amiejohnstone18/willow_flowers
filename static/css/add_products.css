@@ -1,4 +1,4 @@
-h1 h3 {
+h1, h3 {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
     text-align: center;
@@ -14,7 +14,6 @@ form {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
     color: white;
-    float: right;
     vertical-align: bottom;
     margin-top: 2em;
 }
@@ -22,4 +21,12 @@ form {
 .btn:hover {
     color: white;
     text-decoration: underline;
+}
+
+.upload {
+    float: left;
+}
+
+.cancel {
+    float: right;
 }
