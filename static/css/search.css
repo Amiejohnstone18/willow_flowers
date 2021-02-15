@@ -11,15 +11,14 @@ form {
     margin-top: 0.5em;
 }
 
-/* Search */
-#search-icon {
-    font-size: 1.5em;
-    color: #ffc1cc;
+/* Search Icon */
+.form-control.btn {
+    margin-top: 0px;
 }
 
-.search {
-    font-family:'Playfair Display', serif;
+.icon {
     font-size: 18px;
+    color: white;
 }
 
 /* search button */

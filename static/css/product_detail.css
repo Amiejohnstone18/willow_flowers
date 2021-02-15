@@ -27,22 +27,12 @@
     font-weight: bold;
 }
 
-/* Icons */
-#heart-icon {
-    font-size: 2em;
-    float: right;
-}
-
-#heart-icon:hover{
-    font-size: 2.2em;
-}
-
-/* Quanitiy*/
+/* Quanitiy */
 p {
     font-family:'Playfair Display', serif;
 }
 
-/* Add to basket button */
+/* Buttons */
 .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
@@ -59,7 +49,6 @@ p {
 
 .edit {
     float: left;
-    color: white;
 }
 
 .delete {

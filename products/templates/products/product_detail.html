@@ -32,10 +32,6 @@
                             <input type="submit" class="btn btn-sm" value="Add to favourites">
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </form>
-
-
-
-
                         <br>
                         <br>
                         <br>
@@ -60,9 +56,11 @@
                     <br>
                     <br>
                     <br>
+                    <br>
+                    <br>
                     {% if request.user.is_superuser %}
-                    <button class="btn btn-sm edit"><a href="{% url 'update_product' product.id %}">Edit</a></button>
-                    <button class="btn btn-sm delete"><a href="{% url 'delete_product' product.id %}">Delete</a></button>
+                    <a class="btn btn-sm edit" href="{% url 'update_product' product.id %}">Edit</a>
+                    <a class="btn btn-sm delete" href="{% url 'delete_product' product.id %}">Delete</a>
                     {% endif %}
                 </div>
             </div>
