@@ -1,7 +1,9 @@
-h1 h3 {
-    background-color:#ffc1cc;
+h1, h3 {
+    color:#ffc1cc;
     font-family:'Playfair Display', serif;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Form */
@@ -22,4 +24,12 @@ form {
 .btn:hover {
     color: white;
     text-decoration: underline;
+}
+
+.update {
+    float: left;
+}
+
+.cancel {
+    float: right;
 }

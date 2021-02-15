@@ -56,3 +56,12 @@ p {
     color: white;
     text-decoration: underline;
 }
+
+.edit {
+    float: left;
+    color: white;
+}
+
+.delete {
+    float: right;
+}

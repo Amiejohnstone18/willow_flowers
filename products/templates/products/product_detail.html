@@ -59,9 +59,10 @@
                     </div>
                     <br>
                     <br>
+                    <br>
                     {% if request.user.is_superuser %}
-                    <button class="btn btn-sm"><a href="{% url 'update_product' product.id %}">Edit</a></button>
-                    <button class="btn btn-sm"><a href="{% url 'delete_product' product.id %}">Delete</a></button>
+                    <button class="btn btn-sm edit"><a href="{% url 'update_product' product.id %}">Edit</a></button>
+                    <button class="btn btn-sm delete"><a href="{% url 'delete_product' product.id %}">Delete</a></button>
                     {% endif %}
                 </div>
             </div>
