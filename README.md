@@ -179,7 +179,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 *	Search Functionality – This will be found in the navigation menu and will take a user to a page whereby they are able to enter a word based on a product they would like to find. From here a list of products resulting to that search term will be displayed.
 
-** IMAGE
+![search.pgn](documents/images/search.png)
 
 *	Links to Social Media – Links to [Pinterest](https://www.pinterest.co.uk/), [Instagram](https://www.instagram.com/) and [Twitter](https://www.instagram.com/) are accessible in the bottom right of the page footer. These links will take a user directly to the social platforms in a new browser, to ensure they don’t venture off from Willow Flowers. 
 
