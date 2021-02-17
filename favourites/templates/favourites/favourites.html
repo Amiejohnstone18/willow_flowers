@@ -13,22 +13,28 @@
     <div class="row">
         <div class="col">
             <div class="row">
-                <div class=" col-sm-4 col-md-4 col-lg-3">
-            <div class="card">
                 {% for item in favourite_items %}
-                {% if item.product.image %}
-                <img src="{{ item.product.image.url }}" class="card-img-top img-fluid" alt="{{ product.name }}">
-                {% else %}
-                <img src="{{ MEDIA_URL}}noimage.png }}" class="card-img-top img-fluid" alt="{{ product.name }}">
-                {% endif %}
-                <div class="card-body">
-                    <h5 class="card-title">{{ item.product.name }}</h5>
-                    <p class="card-price">£{{ item.product.price }}</p>
-                    <!--<a href="{% url 'product_detail' item.product.id %}" class="btn btn-sm">View More</a>-->
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                        {% if item.product.image %}
+                        <img src="{{ item.product.image.url }}" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        {% else %}
+                        <img src="{{ MEDIA_URL}}noimage.png }}" class="card-img-top img-fluid" alt="{{ product.name }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ item.product.name }}</h5>
+                            <p class="card-price">£{{ item.product.price }}</p>
+                            <a href="{% url 'product_detail' item.product.id %}" class="btn btn-sm">View More</a>
+                            <br>
+                            <form class="form" action="{% url 'remove_from_favourites' item.product.id %}" method="POST">
+                                {% csrf_token %}
+                                <input type="submit" class="btn btn-sm" value="Remove">
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 {% endfor %}
-            </div>
-            </div>
             </div>
         </div>
     </div>
@@ -40,3 +46,19 @@
 {% endblock %}
 
 
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    // Remove item and reload on click
+    $('.remove-item').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/favourites/remove/${itemId}/`;
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
+</script>
+{% endblock %}
