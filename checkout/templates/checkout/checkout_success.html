@@ -13,13 +13,12 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <p class="confirm-text">Your order confirmation has been sent to <strong>{{ order.email }}</strong>.</p>
+            <p class="confirm-text">Your order confirmation number<strong> {{ order.order_number }} </strong>has been sent to<strong> {{ order.email }}</strong>.</p>
             <div class="home-button">
                 <a href="{% url 'home' %}" class="btn btn-sm">Home</a>
             </div>
         </div>
     </div>
 </div>
-
 
 {% endblock %}

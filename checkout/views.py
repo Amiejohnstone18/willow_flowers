@@ -1,9 +1,12 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
 from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
@@ -11,6 +14,9 @@ from basket.contexts import basket_contents
 
 import stripe
 import json
+
+# Checkout code from https://github.com/ckz8780/boutique_ado_v1/blob/master/checkout/views.py
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -44,6 +50,7 @@ def checkout(request):
             'street_address': request.POST['street_address'],
             'county': request.POST['county'],
         }
+
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
@@ -66,8 +73,9 @@ def checkout(request):
                     return redirect(reverse('view_basket'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
-
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
+    else:
         basket = request.session.get('basket', {})
         if not basket:
             return redirect(reverse('home'))
@@ -80,6 +88,25 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
+
+        # Prefill form with users information
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': request.POST['full_name'],
+                    'email': request.POST['email'],
+                    'phone_number': request.POST['phone_number'],
+                    'country': request.POST['country'],
+                    'postcode': request.POST['postcode'],
+                    'town': request.POST['town'],
+                    'street_address': request.POST['street_address'],
+                    'county': request.POST['county'],
+                })
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
     template = 'checkout/checkout.html'
     context = {
