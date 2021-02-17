@@ -94,14 +94,14 @@ def checkout(request):
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'full_name': request.POST['full_name'],
-                    'email': request.POST['email'],
-                    'phone_number': request.POST['phone_number'],
-                    'country': request.POST['country'],
-                    'postcode': request.POST['postcode'],
-                    'town': request.POST['town'],
-                    'street_address': request.POST['street_address'],
-                    'county': request.POST['county'],
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.default_phone_number,
+                    'country': profile.default_country,
+                    'postcode': profile.default_postcode,
+                    'town': profile.default_town,
+                    'street_address': profile.default_street_address,
+                    'county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()

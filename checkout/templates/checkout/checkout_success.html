@@ -9,11 +9,12 @@
 {% block content %}
 
 <h1 class="order-confirm">Thank you for your order</h1>
-
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
             <p class="confirm-text">Your order confirmation number<strong> {{ order.order_number }} </strong>has been sent to<strong> {{ order.email }}</strong>.</p>
+            <br>
+            <br>
             <div class="home-button">
                 <a href="{% url 'home' %}" class="btn btn-sm">Home</a>
             </div>

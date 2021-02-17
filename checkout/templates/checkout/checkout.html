@@ -54,18 +54,9 @@
                 </fieldset>
                 <p class="payment-total">Total: <strong>£{{ grand_total|floatformat:2 }}</strong></p>
                 <!-- Submit Buttons -->
-                <div class="row">
-                    <div class="col">
-                        <button class="submit-button btn btn-sm">
-                            <a href="{% url 'view_basket' %}">
-                                <span class="basket">Basket</span>
-                            </a>
-                        </button>
                         <button class="submit-button btn btn-sm">
                             <span class="pay-now">Pay Now</span>
                         </button>
-                    </div>
-                </div>
             </form>
         </div>
     </div>

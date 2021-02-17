@@ -28,32 +28,17 @@
     font-size: 20px;
 }
 
-.pay-now {
+.btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
     color: white;
+    vertical-align: bottom;
     float: right;
-    vertical-align: bottom;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-.pay-now:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.basket {
-    background-color:#ffc1cc;
-    font-family:'Playfair Display', serif;
-    color: white;
-    float: left;
-    vertical-align: bottom;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.basket:hover {
+.btn:hover {
     color: white;
     text-decoration: underline;
 }

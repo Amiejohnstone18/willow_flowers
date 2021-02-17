@@ -35,10 +35,10 @@ def remove_from_favourites(request, item_id):
 
     try:
         favourites = request.session.get('favourites', [])
-        favourites.pop(item_id)
+        favourites.remove(item_id)
 
         request.session['favourites'] = favourites
-        return redirect('favourites')
+        return redirect('view_favourites')
 
     except Exception as e:
         return HttpResponse(status=500)

@@ -20,3 +20,18 @@ h1, h3 {
     color: white;
     text-decoration: underline;
 }
+
+/* Card */
+.card {
+     overflow: hidden;
+    padding: 10px, 20px, 20px, 20px;
+    display: block;
+    margin-bottom: 10px;
+    border: 0.5px solid #D3D3D3;
+    min-height: 35em;
+}
+
+img {
+    max-height: 300px;
+    object-fit: cover;
+}
