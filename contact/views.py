@@ -19,8 +19,8 @@ def contactview(request):
 
         subject = "A user's message"
 
-        message = name + " with the email, "
-        + email + ", sent the following message:\n\n" + message
+        message = name + " with the email, " \
+            + email + ", sent the following message:\n\n" + message
         send_mail(
             subject,
             message,
