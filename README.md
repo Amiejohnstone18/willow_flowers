@@ -1,6 +1,6 @@
 # Willow Flowers 
 
---> image of website on different devices 
+![responsive-img](documents/images/responsive-img.png)
 
 [Willow Flowers](https://willow-flowers.herokuapp.com/) is a user-friendly e-commerce website built via main technologies [HTML](https://html.com/), [CSS](https://en.wikipedia.org/wiki/CSS), [JavaScript](https://www.javascript.com/about), [Python](https://www.python.org/) and [Django](https://www.djangoproject.com/). 
 The purpose of this website is to enable consumers to purchase items, such as plants and flowers, and create a user profile to store their previous orders and site favourites to access at any time. The website owner can upload, edit and delete products when necessary. 
@@ -337,12 +337,12 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ## Browser Capability 
 
-| Browser:         | Device Type:   | Compatibility:|
-| -----------      | -----------    |---------------|
-| Google Chrome    | PC             | ★★★★★        |
+| Browser:         | Device Type:   | Compatibility:| Notes:         |   
+| -----------      | -----------    |---------------|----------------|
+| Google Chrome    | PC             | ★★★★★       | Every page works as expects.
 | Mozilla Firefox  | PC             |               |
 | Apple Safari     | PC             |               |
-| Internet Explorer| PC             |               |
+| Internet Explorer| PC             | ★★★          | Images appear slightly distaughted and the basket nav icon falls off the edge of the page.
 | Opera            | PC             |               |
 
 ## Responsive Testing 
