@@ -1,7 +1,7 @@
 from django.http import HttpResponse
-from django.core.mail import send_mail 
+from django.core.mail import send_mail
 from django.template.loader import render_to_string
-from django.conf import settings 
+from django.conf import settings
 
 from .models import Order, OrderLineItem
 from products.models import Product
@@ -11,7 +11,8 @@ import json
 import time
 
 
-# Code from https://github.com/ckz8780/boutique_ado_v1/blob/master/checkout/webhook_handler.py
+# Code from https://github.com/ckz8780/boutique_ado_v1/
+# blob/master/checkout/webhook_handler.py
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""

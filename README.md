@@ -16,7 +16,6 @@ The purpose of this website is to enable consumers to purchase items, such as pl
 * [Project Review](#Project-Review)
 * [Databse](#Database)
 * [Trello](#Trello)
-* [Code Structure](#Code-Structure)
 * [Features](#Features)
     * [Existing Features](#Existing-features)
     * [Features Left to Implement](#Features-Left-to-Implement)
@@ -42,7 +41,7 @@ The purpose of this website is to enable consumers to purchase items, such as pl
 ## Strategy
 Following the five planes of user experience design, the strategy has been separated into *Who*, *What*, *Where*, *When* and *Why* to initially  understand the website users’ requirements and needs. 
 
-**Who** - The customer will be an individual looking to purchase flowers or a plant for an occasion such as a Birthday, New Baby, Congratulations, Wedding, Get Well Soon and inside or out outside plants. The website will therefore not have a specific target demographic. 
+**Who** - The customer will be an individual looking to purchase flowers or a plant for an occasion such as a Birthday, New Baby, Congratulations, Wedding, Get Well Soon and Inside or Outside plants. The website will therefore not have a specific target demographic. 
 
 **What** - The idea for this website is to design and build an e-commerce florist site whereby consumers can purchase and have products from the site delivered to recipients depending on the occasion at hand. They are also able to favourite specific items and keep them in their personal account favourites to revisit later. 
 
@@ -56,23 +55,22 @@ Following this, I also conducted some user stories to ensure the website will se
 
 | As a:       | I would like to:                                | So that I can:                                            |
 | :---        | :----                                           |  :---                                                     |
-| **User**    | Shop the florist range by occasion              | Purchase some flowers for a particular event              |
-| **User**    | Create a user account                           | Keep track of my previous purchases                       |
-| **User**    | Search for a particular flower                  | Order them for a specific occasion                        |
-| **User**    | Add multiple products to my basket              | Order more than one item at once                          |
-| **User**    | Add and delete items from my basket             | Decide on my final purchase at the end of my experience   |
-| **User**    | Receive an email confirmation of my order       | Have a copy of my order number                            |
-| **User**    | Favourite an item advertised on the site        | Come back to it and purchase later                        |
-| **User**    | Contact the owners of the business              | To thank them for my purchase                             |
+| **User A**    | Shop the florist range by occasion              | Purchase some flowers for a particular event              |
+| **User B**    | Create a user account                           | Keep track of my previous purchases                       |
+| **User C**    | Search for a particular flower                  | Order them for a specific occasion                        |
+| **User D**    | Add multiple products to my basket              | Order more than one item at once                          |
+| **User E**    | Add and delete items from my basket             | Decide on my final purchase at the end of my experience   |
+| **User F**    | Receive an email confirmation of my order       | Have a copy of my order number                            |
+| **User G**    | Favourite an item advertised on the site        | Come back to it and purchase later                        |
+| **User H**    | Contact the owners of the business              | To thank them for my purchase                             |
 
 <br>
 
 
 | As a:       | I would like to:                                | So that I can:                                |
-| :---        | :----                                           |  :---                                         |
-| **Admin**   | View a list of orders that have come through    | Process the orders                            |
-| **Admin**   | Add, Update, and delete products                | Update the website when necessary             |
-| **Admin**   | Receive a copy of any contact forms submitted   | So, I can respond accordingly to the customer |
+| :---        | :----                                           |  :---         
+| **Admin A**   | Add, Update, and delete products                | Update the website when necessary             |
+| **Admin B**   | Receive a copy of any contact forms submitted   | So, I can respond accordingly to the customer |
 
 
 
@@ -123,9 +121,7 @@ I constantly reflected through my wireframes during the development process for 
 ![testimonial-2.pgn](documents/images/testimonial-2.png)
 
 # Database
-The database used for the development of the project was [SQLite](https://sqlite.org/index.html) which was later moved to [Heroku](https://dashboard.heroku.com/) using the [Postgres](https://www.postgresql.org/docs/) add-on. Below is a visualisation of the database schema.
-
-** Database Schema Image
+The database used for the development of the project was [SQLite](https://sqlite.org/index.html) which was later moved to [Heroku](https://dashboard.heroku.com/) using the [Postgres](https://www.postgresql.org/docs/) add-on. 
 
 [Contents](#Contents)
 
@@ -133,12 +129,6 @@ The database used for the development of the project was [SQLite](https://sqlite
 To ensure I was staying organised and keeping in time with the deadline for this project, I created a [Trello](https://trello.com/en) board to list things I needed to do, were a working progress and what was completed. This helped me to ensure I was covering all aspects of the requirements for this project. 
 
 ![trello.pgn](documents/images/trello.png)
-
-[Contents](#Contents)
-
-# Code Structure
-
-** Image of code structure 
 
 [Contents](#Contents)
 
@@ -169,7 +159,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ![testimonials.pgn](documents/images/testimonials.png)
 
-*	X3 Image links – On the home page is three circle images which provide links to the categories Birthday, Inside Plants and Wedding. When an image is clicked the user will be taken to that products category of items displayed as product cards. 
+*	X3 Image links – On the Home page is three circle images which provide links to the categories Birthday, Inside Plants and Wedding. When an image is clicked the user will be taken to that products category of items displayed as product cards. 
 
 ![x3-images.pgn](documents/images/x3-images.png)
 
@@ -276,7 +266,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 *	Live chat – Allow users to chat online with Willow Flowers to get a direct and fast response on their query.
 *	About Us – Provide some information about how Willow Flowers was initially created and who are the employees involved, to give the website a more personal touch. 
 *	Subscription Offer – Whereby a user can pay a monthly fee and receive a random product from Willow Flowers every month.
-*	Contact Information - Provide information such as phone number, address and business hours in the far left of the Footer to display on every page. 
+*	Contact Information - Provide information such as phone number, address and business hours in the far left of the footer to display on every page. 
 *	GDPR Feature- Allowing the user to opt-in to receiving promotion email offers from Willow Flowers. 
 *	Review System – Give users the option to review products on a star rated system based off their personal experience with the product. These would be visible on the product cards. 
 *	Toast Notifications – Previewing a brief message to users when they have complete certain actions on the website.
@@ -330,51 +320,53 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 | Code:         | Validated on: | Results:      |
 | -----------   | -----------   |---------------|
-| HTML          |  [https://validator.w3.org/](https://validator.w3.org/)             |               |
-| CSS           |  [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)             |               |
-| JavaScript    | [https://jshint.com/](https://jshint.com/)              |               |
-| Python        | [http://pep8online.com/](http://pep8online.com/)              |               |
+| HTML          |  [https://validator.w3.org/](https://validator.w3.org/)             |  Verified (Expected errors from python code)             | 
+| CSS           |  [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)             |Verified - No Errors           
+| JavaScript    | [https://jshint.com/](https://jshint.com/)  | Verified - Repeated "Missing Semicolon" on every bit of code but could not source the issue.           |               
+| Python        | [http://pep8online.com/](http://pep8online.com/)              | Verified              |
 
 ## Browser Capability 
 
 | Browser:         | Device Type:   | Compatibility:| Notes:         |   
 | -----------      | -----------    |---------------|----------------|
 | Google Chrome    | PC             | ★★★★★       | Every page works as expects.
-| Mozilla Firefox  | PC             |               |
-| Apple Safari     | PC             |               |
+| Mozilla Firefox  | PC             | ★★★★★       | Every page works as expects.
+| Apple Safari     | PC             | ★★★★★       | Every page works as expects.
 | Internet Explorer| PC             | ★★★          | Images appear slightly distaughted and the basket nav icon falls off the edge of the page.
-| Opera            | PC             |               |
+| Opera            | PC             | ★★★★★       | Every page works as expects.
 
 ## Responsive Testing 
 
-| Device Size:     | Browser:       | Compatibility:|
-| -----------      | -----------    |---------------|
+| Device Size:     | Browser:        | Compatibility:| Notes:
+| -----------      | -----------     |---------------|----------
 | > 1200 px         | Google Chrome  | ★★★★★      |  
-| > 992 px          | Google Chrome  |               |
-| > 768 px          | Google Chrome  |               |
-| > 576 px          | Google Chrome  |               |
-| > 768 px          | Google Chrome  |               |
+| > 992 px          | Google Chrome  | ★★★★★      |
+| > 768 px          | Google Chrome  | ★★★★        | x3 images on the Home page appear down the left.
+| > 576 px          | Google Chrome  | ★★★★        | Moved min-width to 1500vh - Footer can sometimes be too far down.
+| > 768 px          | Google Chrome  | ★★★★        | x3 images on the Home page appear down the left.
 
 ## User Stories 
 
-| As a:       | I would like to:                                | So that I can:                                            |
-| :---        | :----                                           |  :---                                                     |
-| **User**    | Shop the florist range by occasion              | Purchase some flowers for a particular event              |
-| **User**    | Create a user account                           | Keep track of my previous purchases                       |
-| **User**    | Search for a particular flower                  | Order them for a specific occasion                        |
-| **User**    | Add multiple products to my basket              | Order more than one item at once                          |
-| **User**    | Add and delete items from my basket             | Decide on my final purchase at the end of my experience   |
-| **User**    | Receive an email confirmation of my order       | Have a copy of my order number      |
-| **User**    | Favourite an item advertised on the site        | Come back to it and purchase later                         |
-| **User**    | Contact the owners of the business              | To thank them for my purchase                             |
+Below are the solution to the user stories previously mentioned. 
+
+| User Story:       | Solution:                                
+| :---        | :----                                        
+| **User A**    | -	Click on either ‘Flowers’ or ‘Plants’ on the main navigation menu and select the occasion required.             | 
+| **User B**    | -	Select the user icon in the far-right corner. Select Sign up and complete the required fields to create your account.                         | 
+| **User C**    | -	Select the search icon in the far-right corner, type in your search term in the search bar and select ‘Search’ to receive all products relating to your search.                 | 
+| **User D**    | -	To add items to your basket, click on the product cards ‘View more’ button to view its full description. Using the quantity feature, select the amount required and click ‘Add to basket’. Repeat this with every product you would like to add to your basket.            
+| **User E**    | -	Select the basket icon from the far- right corner, this will pull up all items in your basket. To remove an item, move the quantity feature to 0 (or the new amount required) and select ‘Update basket’.            | 
+| **User F**    | -	Once a checkout is complete, the user will be presented with a checkout confirmation, informing them of their order confirmation number and the email address a copy of this has been sent to.      | 
+| **User G**    | -	To add an item to your favourites, view the items full description and select the ‘Add to favourites’ button. If you are a registered user, the website will then ask you to log in to your account. If not, you will be asked to sign up to create a favourites list on your account. You can view your favourites at any time by clicking on the heart icon in the far-right corner.        | 
+| **User H**    | -	Select ‘Contact’ via the main navigation, this will take you to a form requiring your name, email address and the message you would like to submit. Once complete, click ‘Submit’ and your query has been sent to the business owners.             | 
 
 <br>
 
 
-| As a:       | I would like to:                                | So that I can:                                |
-| :---        | :----                                           |  :---         
-| **Admin**   | Add, Update, and delete products                | Update the website when necessary             |
-| **Admin**   | Receive a copy of any contact forms submitted   | So, I can respond accordingly to the customer |
+| Admin Story:       | Solution:                                |
+| :---        | :----                                           |          
+| **Admin A**   | -	Add a product: Login to your admin account, select Admin    from the user icon. This will take you to a from where you can add a new product. - Update a product: Login to your admin account, click on a products full description you would like to update, select the ‘update’ button. This will take you to a form with the product details re-filled allowing you to update details where necessary. - Delete a product: Login to your admin account, find the product you would like to delete and view its full description. Select the ‘Delete’ button to remove the item from the site.
+| **Admin B**   | -	Once a customer has completed the contact form, a copy of the information and message will be sent to the website owners email inbox. 
 
 
 ## Feature Testing 
@@ -417,8 +409,6 @@ Below is a list of all features tested to ensure they are working properly:
 
 * New CSS failing in development - New CSS written in mid-way through the project was failing to work in the browser- to solve the issues I had to recreate the work space by downloading my db.sqlite3 file to my PC, closing the current Gitpod workspace, clicking Gitpod on the repository in my GitHub respository, opening the new workspace, uploading the db.SQlite3 file from my PC and then reinstall the requirements.txt file to allow for Django to work. Once I had done this and ran the project all new CSS was working.
 
-* Gitpod name in the URL appearing as ‘Jade Gazelle’ - Towards the end of my project I noticed my Gitpod URL and the Brower was showing Jade Gazelle instead of Amie Johnstone. I contacted Gitpod to query this issue and have it resolved, to which I was informed that they “have changed the workspace URLs so that it starts with something recognizable: [colour]-[animal]”.
-
 
 [Contents](#Contents)
 
@@ -426,7 +416,86 @@ Below is a list of all features tested to ensure they are working properly:
 
 The repository for this project is hosted through [GitHub Pages](https://github.com/) and is deployed live through [Heroku](https://dashboard.heroku.com/).
 
-## Deploy code locally using the CL:
+To deply my project I follwed the below steps:
+
+1.	Login to Heroku
+2.	Create a new app and give it a name
+4.	Choose location closest to me (EU)
+5.	Go to resources and select new Postgres database
+6.  In Gitpod- `install pip3 install dj_database_url`
+7.	In Gitpod - `install pip3 install psycopg2-binary`
+8.	In the terminal type `pip3 freeze requirements.txt`
+9.	In `settings.py`  - import dj_database_url
+10.	Scroll to database setting and comment out default configuration variable 
+11.	Replace default database with `dj_database_url.parse()`
+12.	Go to Heroku configuration and get the Postgres database_url and paste it into the parse() and save
+14.	Type `python3 manage.py migrate` into the terminal 
+15.	Import category data- load categories `python3 manage.py loaddata categories`
+16.	Import product data- load categories `python3 manage.py loaddata products`
+17.	Create a superuser in the terminal - `python3 manage.py createsuperuser`
+18.	Enter: Username, Email, Password 
+19.	Remove Heroku database configiuration variable and uncomment the original so database URL doesn't end up in version control
+20.	Commit changes
+21.	Use if statement in `settings.py`- when app is running via Heroku the data base URL Environment variable will be defined, connect to Postgres and otherwise use SQLite
+22.	In the terminal type - `pip3 install gunicorn`- web server - freeze in `requirements.txt` file 
+23.	Creat a  `Procfile` 
+24.	Run guncorn to serve the Heroku app
+25.	Login to Herkoku from the terminal 
+26.	Temporarily disable collect static = 1
+27.	Add allowed hosts name to Herkou app in `settings.py` (and local hosts so Gitpod still works)
+28.	Add and commit changes and push to Github
+29.	Gitpush Herkou master to deploy to Heroku
+30.	Set up automatic deployment in Heroko- go to the deploy tab and connect to the Github repository and enable automatic deployment
+31.	Add secret key to Heroku configuration variables
+32.	In `settings.py`, replace the secret key with a call to get it from the Environment Varaibles
+33.	Set debug = true if development is in environment variables
+34.	Commit changes and push to Github
+35.	Go to Herkou and check the building progress
+36.	Store static files and images in AWS S3 
+37.	Create a AWS account 
+38.	Sign in to AWS Management 
+39.	Search for S3 and open it 
+40.	Create a new bucket to store files
+41.	Go to properties and turn on static website hosting and save
+42.	Permissions- pass in CORS configuration, bucket policy- policy generator S3 bucket policy, allow all principles, action is get object
+43.	Copy ARN and paste into the ARN box
+44.	Click add statement 
+45.	Generate policy- copy policy into bucket policy editor 
+46.	Add `/*` to end of resource key
+47.	Click save
+48.	Access control list tab set the list objects permission to everyone
+49.	Create a user to access S3 bucket
+50.	Open IAM and create a group, then access policy, assign the user to the group
+51.	Download and save .CSV file
+52.	Install `boto3` and Django storage 
+53.	Freeze into `requirements.txt` file
+54.	Add storages to installed apps
+55.	In `settings.py` add an if statement for Heroku by using `USE_AWS` 
+56.	Add the storage bucket name, AWS region name, AWS Secret access key
+57.	Add AWS keys to Herkou configuration variables 
+58.	Add `USE_AWS = True` to Herkou configuration variables 
+59.	Remove disable collect static variable from Herkou configuration
+60.	In `settings.py` inform Django of where static files are coming form in production 
+61.	Create custom storages file
+62.	Import both settings from `Django.conf` and `S3boto3` storage 
+63.	Create custom class and store static and media files from location in settings 
+64.	In `settings.py` - static files use the storage class just created 
+65.	Repeat with media files 
+66.	Override and set static & media files custom domains media location 
+67.	Add and commit changes and push
+68.	Check the build log in Herkou to see if the files were collected
+69.	Go to S3 and check for the static folder in the bucket 
+71. Go to S3 create a new folder called media 
+72.	Upload - add files- select all product images and click next
+73.	Manage public permissions grant public read access 
+74.	Click next and then upload 
+75.	Go to Django admin and confirm superuser's email 
+76.	Add stripe keys to Herkou configuration variables
+77.	Go to Webshoooks, add end point, add URL for Hekou app followed by `/checkout/wh/` and select receive all events and add end point 
+78.	Add Webhooks signing secret to Herkou configuration variables 
+
+
+## Deploy code locally using the CL
 
 If a developer was interested in running my code locally, then they would need to follow the below steps:
 
@@ -457,7 +526,9 @@ You will need to set up the following environment variables on your system:
 | STRIPE_WH_SECRET      | Need for Stripe payments                                          | 
 | USE_AWS               | Deployment only – to tell Django to use S3 instead of local files | 
 | AWS_ACCESS_KEY_ID     |  Need for S3 Bucket static files                                  | 
-| AWS_SECRET_ACCESS_KEY | Need for S3 Bucket Static files                                   | 
+| AWS_SECRET_ACCESS_KEY | Need for S3 Bucket Static files            | 
+| EMAIL_HOST_USER       | Need for email verifications and contact      |
+| EMAIL_HOST_PASSWORD   | Need for email verifications and contact  |
 
 
 Should you wish to access the URL to the website, that can be found via: [https://willow-flowers.herokuapp.com/](https://willow-flowers.herokuapp.com/)

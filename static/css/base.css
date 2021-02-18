@@ -172,4 +172,8 @@ main {
         margin-top: 0px;
         height: 0px;
     }
+
+    main {
+        min-height: 1500vh;
+    }
 }

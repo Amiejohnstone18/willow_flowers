@@ -33,7 +33,7 @@ def adjust_basket(request, item_id):
 
     if quantity > 0:
         basket[item_id] = quantity
-    else: 
+    else:
         del basket[item_id]
 
     request.session['basket'] = basket

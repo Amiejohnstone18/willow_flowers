@@ -9,7 +9,7 @@
 {% block content %}
 
 <h1>Your Basket</h1>
-
+<!-- Code inspired from https://github.com/ckz8780/boutique_ado_v1/blob/be009dd6c8db8c9cbc18aa5b8dd8a04daa194ed0/bag/templates/bag/bag.html-->
 {% if basket_items %}
 
 <!-- Items in the basket -->
@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col sm-12">
                     <div class="image">
                         {% if item.product.image %}
                         <a href="{{ item.product.image.url }}" target="_blank">
@@ -30,7 +30,7 @@
                         {% endif %}
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col sm-12">
                     <div class="details-container">
                         <h2 class="product-name">{{ item.product.name }}</h2>
                         <p class="description">{{ item.product.description }}</p>
@@ -41,7 +41,7 @@
                         <form class="form update-form" method="POST" action="{% url 'adjust_basket' item.item_id %}">
                             {% csrf_token %}
                             <div class="form">
-                                <div class="col-12">
+                                <div class="col sm-12">
                                     <p>Quantity</p>
                                     <div class="form">
                                         <div class="input-group">
@@ -101,12 +101,6 @@
     $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    })
-
-    $.post(url, data)
-        .done(function () {
-            location.reload();
-        });
     })
 </script>
 {% endblock %}

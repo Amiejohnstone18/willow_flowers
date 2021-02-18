@@ -35,22 +35,23 @@
         <tbody>
             <tr>
                 <th scope="row">
-                    <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">{{ order.order_number|truncatechars:8 }}</a>
-      </th>
-      <td>{{ order.date }}</td>
-      <td>
-          <ul class=" list">
+                    <a href="{% url 'order_history' order.order_number %}"
+                        title="{{ order.order_number }}">{{ order.order_number|truncatechars:8 }}</a>
+                </th>
+                <td>{{ order.date }}</td>
+                <td>
+                    <ul class=" list">
                         {% for item in order.lineitems.all %}
                         <li>{{ item.product.name }} x{{ item.quantity }}</li>
                         {% endfor %}
-                        </ul>
-                        </td>
+                    </ul>
+                </td>
                 <td>£ {{ order.grand_total }}</td>
             </tr>
-        {% endfor %}
+            {% endfor %}
         </tbody>
     </table>
 </div>
-    {{ profile }}
+{{ profile }}
 
-    {% endblock %}
+{% endblock %}

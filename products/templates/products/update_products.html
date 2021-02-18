@@ -14,7 +14,8 @@
 <div class="container">
     <div class="row">
         <div class="col-12 md-6">
-            <form method="POST" action="{% url 'update_product' product.id %}" class="form" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'update_product' product.id %}" class="form"
+                enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="product-btn">

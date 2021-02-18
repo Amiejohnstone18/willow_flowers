@@ -2,7 +2,8 @@ from django.shortcuts import render
 from .forms import ContactForm
 from django.core.mail import send_mail
 
-# Code inspired from http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
+# Code inspired from http://www.learningaboutelectronics.com/Articles/
+# How-to-create-a-contact-form-for-website-in-Django.php
 
 
 def contactview(request):
@@ -18,12 +19,13 @@ def contactview(request):
 
         subject = "A user's message"
 
-        message = name + " with the email, " + email + ", sent the following message:\n\n" + message
+        message = name + " with the email, "
+        + email + ", sent the following message:\n\n" + message
         send_mail(
             subject,
             message,
-            'amiejohnstone18@gmail.com',
-            [email],
+            email,
+            ['amiejohnstone18@gmail.com'],
             fail_silently=False,
         )
 
