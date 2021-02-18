@@ -21,7 +21,7 @@ h1, h3 {
     text-decoration: underline;
 }
 
-/* Card */
+/* Bootstrap Card */
 .card {
      overflow: hidden;
     padding: 10px, 20px, 20px, 20px;

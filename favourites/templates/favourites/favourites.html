@@ -42,7 +42,7 @@
     </div>
     {% else %}
     <h3>No items in your favourites</h3>
-    <button class="btn btn-sm" href="{% url 'home' %}">Home</button>
+    <a href="{% url 'home' %}" class="btn btn-sm">Home</a>
     {% endif %}
 </div>
 {% endblock %}

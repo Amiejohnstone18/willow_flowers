@@ -6,12 +6,14 @@ h1 {
     color: #ffc1cc;
 }
 
+/* Paragraph */
 p {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     padding-top: 1em;
 }
 
+/* Form */
 form {
     text-align: center;
     font-family: 'Playfair Display', serif;

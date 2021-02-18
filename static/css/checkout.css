@@ -1,9 +1,11 @@
+/* Header */
 .checkout {
    font-family:'Playfair Display', serif;
     text-align: center;
     color: #ffc1cc;
 }
 
+/* Form */
 .form-text {
     font-family:'Playfair Display', serif;
     text-align: center;
@@ -18,6 +20,7 @@
     font-family:'Playfair Display', serif;
 }
 
+/* Payment */
 .payment {
     font-family:'Playfair Display', serif;
 }
@@ -28,6 +31,7 @@
     font-size: 20px;
 }
 
+/* Button */
 .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;

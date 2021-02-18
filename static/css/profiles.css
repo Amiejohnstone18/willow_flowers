@@ -1,3 +1,4 @@
+/* Header */
 h1 {
     font-family:'Playfair Display', serif;
     text-align: center;
@@ -6,12 +7,14 @@ h1 {
     padding-bottom: 20px;
 }
 
+/* Form Text */
 p, form {
     font-family:'Playfair Display', serif;
     color: black;
     font-size: 18px;
 }
 
+/* Button */
 .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;
@@ -24,6 +27,7 @@ p, form {
     text-decoration: underline;
 }
 
+/* Order History*/
 .order-history {
     max-height: 416px;
     overflow-y: auto;

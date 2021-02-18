@@ -1,3 +1,4 @@
+/* Order confirmation */
 .order-confirm {
 font-family: 'Playfair Display', serif;
 text-align: center;
@@ -13,6 +14,7 @@ padding-bottom: 20px;
     padding-top: 5em;
 }
 
+/* Button */
 .btn {
     background-color:#ffc1cc;
     font-family:'Playfair Display', serif;

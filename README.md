@@ -155,7 +155,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 *	Icon Navigation – The top right corner of the website provides icon navigation links to Favourites, User Login, Basket and Search. These are visually accessible on every page allowing the user to quickly navigate to the required page.  
 
-** IMAGE
+![icon-navigation.pgn](documents/images/icon-navigation.png)
 
 *	Navigation Menu – The main navigation menu provides links to the Home page, a dropdown to the Flower products and Plant products, and a link to the Contact form. On a mobile view, these can be accessed via the responsive navigation bar. 
 
@@ -187,36 +187,88 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 *	User Profile– Users have the option to create a personal profile whereby they can login and have access to their previous orders. The user will have to click on the user icon at the top of the page and then either login or sign up to create an account. 
 
+![user-icon.pgn](documents/images/user-icon.png)
+
+* User Profile - Login.
+
+![login.pgn](documents/images/login.png)
+
+* User Profile - Sign Up. 
+
+![sign-up.pgn](documents/images/sign-up.png)
+
+* User Profile - Email Verification.
+
+![verify-email-address.pgn](documents/images/verify-email-address.png)
+
+* User Profile - Password Reset.
+
+![password-reset.pgn](documents/images/password-reset.png)
+
+* User Profile - Account. 
+
 ![user-profile.pgn](documents/images/user-profile.png)
+
+* User Profile - Sign out.
+
+![sign-out.pgn](documents/images/sign-out.png)
 
 *	Add Favourite Items – The favourites features allow users to essentially save an item for later. To add a product to their favourites, a user would have to click on a products full description and select the button "Add to favourites". 
 
 ![add-to-favourites.pgn](documents/images/add-to-favourites.png)
 
-*   View Favourites - A user can access this list at anytime by clicking on the heart in the top right icon navigation. If there are no items to display in the Favourites, the user will be presented with a message “No items in your favourites” and a button leading them back to the Home page. 
+*   View Favourites - A user can access this list at anytime by clicking on the heart in the top right icon navigation which will direct them to their listed favourites.
 
-** IMAGE
+![saved-favourites.pgn](documents/images/saved-favourites.png)
+
+* No Favourite Items - If there are no items to display in the Favourites, the user will be presented with a message “No items in your favourites” and a button leading them back to the Home page. 
+
+
+![no-favourites.pgn](documents/images/no-favourites.png)
 
 *	Add Items to Basket – For a user to complete a purchase on a product, they would be required to add that item to their basket. This can be completed by selecting the quantity required on the items full description and selecting “Add to basket”. 
 
 ![add-to-basket.pgn](documents/images/add-to-basket.png)
 
-*	Update Basket - The basket icon displayed in the top right corner will take the user to a list of items currently in their basket. To add or remove quantities from their basket, the user would manipulate the quantity arrows next to each product and select “Update Basket”. 
+*	Update Basket - The basket icon displayed in the top right corner updates when items are added to the basket and upon click, will take the user to a list of items currently in their basket.
+
+![basket-total-nav.pgn](documents/images/basket-total-nav.png)
+
+* Update Basket - To add or remove quantities from their basket, the user would manipulate the quantity arrows next to each product and select “Update Basket”. 
 
 ![update-basket.pgn](documents/images/update-basket.png)
 
-*	Checkout – To complete a purchase the user would be required to browse to their basket and click “Checkout”. They will be taken to a page whereby if they are a logged-in user, their personal information will be auto filled out. If not, the user will be required to fill in the necessary personal fields, along with their payment information. This was built using [Stripe](https://stripe.com/gb?utm_campaign=paid_brand-UK_en_Search_Brand_Stripe-2032860449&utm_medium=cpc&utm_source=google&ad_content=355351450319&utm_term=stripe%20payments&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=Cj0KCQiAyJOBBhDCARIsAJG2h5fdOn7FyoK16NSYU2pwY4gixT-rSAGqwtX9Xm6m-7FI5Cl8J3Lf_90aAod7EALw_wcB) payments. 
+* Backet Total - At the bottom of the basket page will display the basket total.
 
-** IMAGE
+![basket-total.pgn](documents/images/basket-total.png)
+
+* Empty Basket - If a user clicks on the basket icon but they have no items saved into their basket, they will reach a page informing them of "Your basket is empty" and a button redirecting them back to the home page.
+
+![empty-basket.pgn](documents/images/empty-basket.png)
+
+*	Checkout – To complete a purchase the user would be required to browse to their basket and click “Checkout”. They will be taken to a page whereby if they are a logged-in user, their personal information will be auto filled out. If not, the user will be required to fill in the necessary personal fields, along with their payment information. The payments were built using [Stripe](https://stripe.com/gb?utm_campaign=paid_brand-UK_en_Search_Brand_Stripe-2032860449&utm_medium=cpc&utm_source=google&ad_content=355351450319&utm_term=stripe%20payments&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=Cj0KCQiAyJOBBhDCARIsAJG2h5fdOn7FyoK16NSYU2pwY4gixT-rSAGqwtX9Xm6m-7FI5Cl8J3Lf_90aAod7EALw_wcB) payments. 
+
+![checkout.pgn](documents/images/checkout.png)
 
 *	Checkout Confirmation – Upon completion of purchase, the user will be directed to a checkout confirmation page, informing them of the email address their confirmation has been sent to along with their order confirmation number. 
 
-** IMAGE
+![order-confirmation.pgn](documents/images/order-confirmation.png)
 
-*	Admin Profile – The Amin profile is created for the site superusers. The Admin view provides different access links and visuals to a standard user. By clicking on a product, they can update product information or delete the product from the website. In the Admin profile, the Admin can upload new products to the website by filling out the required information. 
+*	Admin Profile – The Amin profile is created for the site superusers. The Admin view provides different access links and visuals to a standard user. 
 
-** IMAGE
+![admin-user-icon.png](documents/images/admin-user-icon.png)
 
+* Admin Update or Delete a product - By clicking on a product, they can update product information or delete the product from the website. 
+
+![admin-update-delete.png](documents/images/admin-update-delete.png)
+
+* Admin - Update A Products Information.
+
+![admin-update-product.png](documents/images/admin-update-product.png)
+
+* Admin Add A New Product - In the Admin profile, the Admin can upload new products to the website by filling out the required information. 
+
+![admin-add-products.png](documents/images/admin-add-products.png)
 
 
 ## Features Left to Implement
@@ -276,9 +328,32 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ## Code Validation 
 
+| Code:         | Validated on: | Results:      |
+| -----------   | -----------   |---------------|
+| HTML          |  [https://validator.w3.org/](https://validator.w3.org/)             |               |
+| CSS           |  [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)             |               |
+| JavaScript    | [https://jshint.com/](https://jshint.com/)              |               |
+| Python        | [http://pep8online.com/](http://pep8online.com/)              |               |
+
 ## Browser Capability 
 
+| Browser:         | Device Type:   | Compatibility:|
+| -----------      | -----------    |---------------|
+| Google Chrome    | PC             | ★★★★★        |
+| Mozilla Firefox  | PC             |               |
+| Apple Safari     | PC             |               |
+| Internet Explorer| PC             |               |
+| Opera            | PC             |               |
+
 ## Responsive Testing 
+
+| Device Size:     | Browser:       | Compatibility:|
+| -----------      | -----------    |---------------|
+| > 1200 px         | Google Chrome  | ★★★★★      |  
+| > 992 px          | Google Chrome  |               |
+| > 768 px          | Google Chrome  |               |
+| > 576 px          | Google Chrome  |               |
+| > 768 px          | Google Chrome  |               |
 
 ## User Stories 
 
@@ -289,21 +364,48 @@ To ensure I was staying organised and keeping in time with the deadline for this
 | **User**    | Search for a particular flower                  | Order them for a specific occasion                        |
 | **User**    | Add multiple products to my basket              | Order more than one item at once                          |
 | **User**    | Add and delete items from my basket             | Decide on my final purchase at the end of my experience   |
-| **User**    | Receive an email confirmation of my order       | Have a copy of my order number and expected delivery      |
-| **User**    | Favourite an item advertised on the site        | Come back to it and purchase later.                       |
+| **User**    | Receive an email confirmation of my order       | Have a copy of my order number      |
+| **User**    | Favourite an item advertised on the site        | Come back to it and purchase later                         |
 | **User**    | Contact the owners of the business              | To thank them for my purchase                             |
 
 <br>
 
 
 | As a:       | I would like to:                                | So that I can:                                |
-| :---        | :----                                           |  :---                                         |
-| **Admin**   | View a list of orders that have come through    | Process the orders                            |
+| :---        | :----                                           |  :---         
 | **Admin**   | Add, Update, and delete products                | Update the website when necessary             |
 | **Admin**   | Receive a copy of any contact forms submitted   | So, I can respond accordingly to the customer |
 
 
 ## Feature Testing 
+
+Below is a list of all features tested to ensure they are working properly:
+
+- [x]	Navigation links work – Desktop/ Tablet/ Mobile
+- [x]	Home page hero carousel slides 
+- [x]	X3 Home page image links work to correct landing pages
+- [x]	Testimonial carousel slides
+- [x]	Social media icons link correctly 
+- [x]	Navigation ‘Flowers’ and ‘Plants’ menu pulls up correct categories 
+- [x]	‘View More’ button on Bootstrap product cards takes user to full description of the item
+- [x]	Add/ remove items in favourites
+- [x]	Add/ remove items in basket
+- [x]	Favourites asks user to login/ Sign up before adding items 
+- [x]	Favourites pulls up favourite items OR informs user of no items in their favourites 
+- [x]	Basket displays all items added to basket OR informs user of no items in their basket
+- [x]	Update quantity on basket items 
+- [x]	Basket (£) icon updates once a user has added to their basket
+- [x]	Contact form- required fields work and submit sends form to hosted email address 
+- [x]	Login / Sign up/ Forgot password/ Verify Email links work
+- [x]	User profile- View personal information and any previous orders 
+- [x]	Admin- Add product to the website
+- [x]	Admin- Update product information
+- [x]	Admin- Delete product from the website
+- [x]	Checkout link works from user’s basket 
+- [x]	Checkout form required fields and card information is correct
+- [x]	Checkout confirmation page displays users email and confirmation number
+- [x]	Search pulls up all products relating to that search term
+- [x]	All buttons direct users to the correct landing pages
 
 
 ## Problems Encountered 
@@ -381,3 +483,4 @@ I received inspiration from this project due to the fact I have placed more orde
 I would like to thank Tutor support, especially Igor Basuga, for his continued help and patience during challenging times on this project. My Mentor, Aaron Sinnott for providing helpful guidance throughout and making the process as logical as he could. 
 
 [Contents](#Contents)
+

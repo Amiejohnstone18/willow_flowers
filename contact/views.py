@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 
 # Code inspired from http://www.learningaboutelectronics.com/Articles/How-to-create-a-contact-form-for-website-in-Django.php
 
+
 def contactview(request):
     name = ''
     email = ''
