@@ -73,7 +73,7 @@ Following this, I also conducted some user stories to ensure the website will se
 | **Admin B**   | Receive a copy of any contact forms submitted   | So, I can respond accordingly to the customer |
 
 
-
+[Contents](#Contents)
 
 ## Scope
 The features included in this website will consist of:
@@ -85,16 +85,24 @@ The features included in this website will consist of:
 * Testimonials from previous customers.
 * Online payments and order confirmation.
 
+[Contents](#Contents)
+
 ## Structure 
 Information architecture will be organised via product information. [Bootstrap cards](https://getbootstrap.com/docs/4.0/components/card/) will be used to organise the product preview images on pages such as the search, the product pages and the basket to keep the layout clean and simple. Buttons will guide the user to complete their purchase, sign up, login or navigate to another page on the site. 
+
+[Contents](#Contents)
 
 ## Skeleton
 The navigation menu will be divided like so:
 
 ![nav-link](documents/images/nav-link.png)
 
+[Contents](#Contents)
+
 ## Surface
 Due to the fact there will be a lot of bursts of colour through the imagery of the products, I thought it would be best to keep surrounding colours minimal as to not over-crowd the page and avoid distraction for users. I will use an accent colour of Bubble-gum Pink (#ffc1cc) for the navigation menu, footer and buttons to keep the theme consitent. The font used will be [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?query=playfair), taken from [Google Fonts](https://fonts.google.com/).
+
+[Contents](#Contents)
 
 ## Wireframes 
 Below is a preview of the Home Page wireframes for desktop, tablet and mobile created on [Balsamiq](https://balsamiq.com/). The individual desktop, tablet and mobile wireframes with all pages can be found [here](documents/wireframes).
@@ -119,6 +127,8 @@ I constantly reflected through my wireframes during the development process for 
 **Testimonial Carousel** - Initially I had designed this to show two rotating customer testimonials at a time on the Home page. This initially caused issues as the testimonials would only show inside the left column, leaving the right blank. Due to this, after careful consideration, I had decided to only preview one testimonial at a time on the home page, spanning the full width of the page.
 
 ![testimonial-2.pgn](documents/images/testimonial-2.png)
+
+[Contents](#Contents)
 
 # Database
 The database used for the development of the project was [SQLite](https://sqlite.org/index.html) which was later moved to [Heroku](https://dashboard.heroku.com/) using the [Postgres](https://www.postgresql.org/docs/) add-on. 
@@ -260,6 +270,7 @@ To ensure I was staying organised and keeping in time with the deadline for this
 
 ![admin-add-products.png](documents/images/admin-add-products.png)
 
+[Contents](#Contents)
 
 ## Features Left to Implement
 
@@ -322,8 +333,10 @@ To ensure I was staying organised and keeping in time with the deadline for this
 | -----------   | -----------   |---------------|
 | HTML          |  [https://validator.w3.org/](https://validator.w3.org/)             |  Verified (Expected errors from python code)             | 
 | CSS           |  [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)             |Verified - No Errors           
-| JavaScript    | [https://jshint.com/](https://jshint.com/)  | Verified - Repeated "Missing Semicolon" on every bit of code but could not source the issue.           |               
+| JavaScript    | [https://jshint.com/](https://jshint.com/)  | Verified          |               
 | Python        | [http://pep8online.com/](http://pep8online.com/)              | Verified              |
+
+[Contents](#Contents)
 
 ## Browser Capability 
 
@@ -335,6 +348,8 @@ To ensure I was staying organised and keeping in time with the deadline for this
 | Internet Explorer| PC             | ★★★          | Images appear slightly distaughted and the basket nav icon falls off the edge of the page.
 | Opera            | PC             | ★★★★★       | Every page works as expects.
 
+[Contents](#Contents)
+
 ## Responsive Testing 
 
 | Device Size:     | Browser:        | Compatibility:| Notes:
@@ -342,8 +357,10 @@ To ensure I was staying organised and keeping in time with the deadline for this
 | > 1200 px         | Google Chrome  | ★★★★★      |  
 | > 992 px          | Google Chrome  | ★★★★★      |
 | > 768 px          | Google Chrome  | ★★★★        | x3 images on the Home page appear down the left.
-| > 576 px          | Google Chrome  | ★★★★        | Moved min-width to 1500vh - Footer can sometimes be too far down.
+| > 576 px          | Google Chrome  | ★★★★        | Moved min-width to 1500vh - Footer can some times be too far down.
 | > 768 px          | Google Chrome  | ★★★★        | x3 images on the Home page appear down the left.
+
+[Contents](#Contents)
 
 ## User Stories 
 
@@ -365,9 +382,10 @@ Below are the solution to the user stories previously mentioned.
 
 | Admin Story:       | Solution:                                |
 | :---        | :----                                           |          
-| **Admin A**   | -	Add a product: Login to your admin account, select Admin    from the user icon. This will take you to a from where you can add a new product. - Update a product: Login to your admin account, click on a products full description you would like to update, select the ‘update’ button. This will take you to a form with the product details re-filled allowing you to update details where necessary. - Delete a product: Login to your admin account, find the product you would like to delete and view its full description. Select the ‘Delete’ button to remove the item from the site.
+| **Admin A**   | -	Add a product: Login to your admin account, select Admin    from the user icon. This will take you to a from where you can add a new product. - Update a product: Login to your admin account, click on a products full description you would like to update, select the ‘update’ button. This will take you to a form with the product details pre-filled allowing you to update details where necessary. - Delete a product: Login to your admin account, find the product you would like to delete and view its full description. Select the ‘Delete’ button to remove the item from the site.
 | **Admin B**   | -	Once a customer has completed the contact form, a copy of the information and message will be sent to the website owners email inbox. 
 
+[Contents](#Contents)
 
 ## Feature Testing 
 
@@ -382,7 +400,7 @@ Below is a list of all features tested to ensure they are working properly:
 - [x]	‘View More’ button on Bootstrap product cards takes user to full description of the item
 - [x]	Add/ remove items in favourites
 - [x]	Add/ remove items in basket
-- [x]	Favourites asks user to login/ Sign up before adding items 
+- [x]	Favourites asks user to login/ sign up before adding items 
 - [x]	Favourites pulls up favourite items OR informs user of no items in their favourites 
 - [x]	Basket displays all items added to basket OR informs user of no items in their basket
 - [x]	Update quantity on basket items 
@@ -399,6 +417,7 @@ Below is a list of all features tested to ensure they are working properly:
 - [x]	Search pulls up all products relating to that search term
 - [x]	All buttons direct users to the correct landing pages
 
+[Contents](#Contents)
 
 ## Problems Encountered 
 * Gitpod showing degraded performance on dashboard, workspace and automatic docker image builds 06/02/2021 – 08/02/2021.
@@ -416,7 +435,7 @@ Below is a list of all features tested to ensure they are working properly:
 
 The repository for this project is hosted through [GitHub Pages](https://github.com/) and is deployed live through [Heroku](https://dashboard.heroku.com/).
 
-To deply my project I follwed the below steps:
+To deply my project I followed the below steps:
 
 1.	Login to Heroku
 2.	Create a new app and give it a name
@@ -425,10 +444,10 @@ To deply my project I follwed the below steps:
 6.  In Gitpod- `install pip3 install dj_database_url`
 7.	In Gitpod - `install pip3 install psycopg2-binary`
 8.	In the terminal type `pip3 freeze requirements.txt`
-9.	In `settings.py`  - import dj_database_url
-10.	Scroll to database setting and comment out default configuration variable 
+9.	In `settings.py`  - `import dj_database_url`
+10.	Scroll to database settings and comment out default configuration variable 
 11.	Replace default database with `dj_database_url.parse()`
-12.	Go to Heroku configuration and get the Postgres database_url and paste it into the parse() and save
+12.	Go to Heroku configuration variables and get the Postgres database_url and paste it into the parse() and save
 14.	Type `python3 manage.py migrate` into the terminal 
 15.	Import category data- load categories `python3 manage.py loaddata categories`
 16.	Import product data- load categories `python3 manage.py loaddata products`
@@ -439,16 +458,16 @@ To deply my project I follwed the below steps:
 21.	Use if statement in `settings.py`- when app is running via Heroku the data base URL Environment variable will be defined, connect to Postgres and otherwise use SQLite
 22.	In the terminal type - `pip3 install gunicorn`- web server - freeze in `requirements.txt` file 
 23.	Creat a  `Procfile` 
-24.	Run guncorn to serve the Heroku app
-25.	Login to Herkoku from the terminal 
-26.	Temporarily disable collect static = 1
+24.	Run gunicorn to serve the Heroku app
+25.	Login to Heroku from the terminal 
+26.	Temporarily disable `collect static = 1`
 27.	Add allowed hosts name to Herkou app in `settings.py` (and local hosts so Gitpod still works)
 28.	Add and commit changes and push to Github
 29.	Gitpush Herkou master to deploy to Heroku
 30.	Set up automatic deployment in Heroko- go to the deploy tab and connect to the Github repository and enable automatic deployment
 31.	Add secret key to Heroku configuration variables
 32.	In `settings.py`, replace the secret key with a call to get it from the Environment Varaibles
-33.	Set debug = true if development is in environment variables
+33.	Set `debug = true` if development is in environment variables
 34.	Commit changes and push to Github
 35.	Go to Herkou and check the building progress
 36.	Store static files and images in AWS S3 
@@ -471,7 +490,7 @@ To deply my project I follwed the below steps:
 53.	Freeze into `requirements.txt` file
 54.	Add storages to installed apps
 55.	In `settings.py` add an if statement for Heroku by using `USE_AWS` 
-56.	Add the storage bucket name, AWS region name, AWS Secret access key
+56.	Add the storage bucket name, AWS region name, AWS secret access key
 57.	Add AWS keys to Herkou configuration variables 
 58.	Add `USE_AWS = True` to Herkou configuration variables 
 59.	Remove disable collect static variable from Herkou configuration
@@ -483,17 +502,18 @@ To deply my project I follwed the below steps:
 65.	Repeat with media files 
 66.	Override and set static & media files custom domains media location 
 67.	Add and commit changes and push
-68.	Check the build log in Herkou to see if the files were collected
+68.	Check the build log in Heroku to see if the files were collected
 69.	Go to S3 and check for the static folder in the bucket 
 71. Go to S3 create a new folder called media 
 72.	Upload - add files- select all product images and click next
 73.	Manage public permissions grant public read access 
 74.	Click next and then upload 
 75.	Go to Django admin and confirm superuser's email 
-76.	Add stripe keys to Herkou configuration variables
-77.	Go to Webshoooks, add end point, add URL for Hekou app followed by `/checkout/wh/` and select receive all events and add end point 
+76.	Add stripe keys to Heroku configuration variables
+77.	Go to Webhooks, add end point, add URL for Heroku app followed by `/checkout/wh/` and select receive all events and add end point 
 78.	Add Webhooks signing secret to Herkou configuration variables 
 
+[Contents](#Contents)
 
 ## Deploy code locally using the CL
 
@@ -542,12 +562,14 @@ Customer Testimonials were written by friends Maddy Darvell, Bill Mold and Daisy
 
 All product descriptions were written by me. 
 
+[Contents](#Contents)
 
 ## Media
 The flower and plant images used for this website were taken from:
 *	[Pexels](https://www.pexels.com/)
 *	[Pixabay](https://pixabay.com/)
 
+[Contents](#Contents)
 
 ## Acknowledgements
 I received inspiration from this project due to the fact I have placed more orders for floral gifts in this past year then I believe ever before. 

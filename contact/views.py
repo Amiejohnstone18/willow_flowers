@@ -36,4 +36,3 @@ def contactview(request):
     else:
         context = {'form': form}
         return render(request, 'contact/contact.html', context)
-
